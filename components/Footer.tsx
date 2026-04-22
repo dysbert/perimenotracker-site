@@ -1,26 +1,25 @@
 import Link from "next/link";
-import Logo from "./Logo";
 
 export default function Footer() {
   return (
-    <footer className="bg-umbra px-5 py-12 md:px-12 md:py-[60px]">
-      <div className="mx-auto grid max-w-[1200px] gap-10 md:grid-cols-2">
+    <footer className="bg-umbra px-5 py-12 md:px-12">
+      <div className="mx-auto flex max-w-[1100px] flex-col gap-8 md:flex-row md:items-center md:justify-between">
         <div>
-          <Logo dark />
+          <p className="font-display text-[22px] italic text-creta">peri</p>
+          <p className="mt-1 text-[12px] text-pizarra">Perimenopause, finally legible.</p>
         </div>
-        <div className="space-y-1 text-[12px] text-[rgba(245,240,232,0.35)]">
-          <p>© 2026 peri</p>
-          <p>Developed by double lab</p>
-          <p>
-            <Link href="/privacy" className="hover:text-creta">
-              Privacy Policy
-            </Link>{" "}
-            ·{" "}
-            <Link href="/terms" className="hover:text-creta">
-              Terms of Use
-            </Link>
-          </p>
+        <div className="flex flex-wrap gap-6 text-[12px] text-pizarra">
+          <a href="https://apps.apple.com" className="transition-colors hover:text-creta">
+            App Store
+          </a>
+          <Link href="/privacy" className="transition-colors hover:text-creta">
+            Privacy Policy
+          </Link>
+          <Link href="/terms" className="transition-colors hover:text-creta">
+            Terms
+          </Link>
         </div>
+        <p className="text-[11px] text-[rgba(158,163,168,0.5)]">© 2026 peri. All rights reserved.</p>
       </div>
     </footer>
   );

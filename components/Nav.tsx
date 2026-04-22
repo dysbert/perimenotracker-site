@@ -11,10 +11,16 @@ export default function Nav() {
 
         <div className="hidden items-center gap-6 md:flex">
           <Link
-            href="/"
+            href="#features"
             className="text-[12px] font-medium uppercase tracking-[0.04em] text-pizarra transition-colors hover:text-siena"
           >
-            Home
+            Features
+          </Link>
+          <Link
+            href="#pricing"
+            className="text-[12px] font-medium uppercase tracking-[0.04em] text-pizarra transition-colors hover:text-siena"
+          >
+            Pricing
           </Link>
           <Link
             href="/privacy"
@@ -22,21 +28,15 @@ export default function Nav() {
           >
             Privacy
           </Link>
-          <Link
-            href="/terms"
-            className="text-[12px] font-medium uppercase tracking-[0.04em] text-pizarra transition-colors hover:text-siena"
-          >
-            Terms
-          </Link>
         </div>
 
         <a
           href="https://apps.apple.com"
           target="_blank"
           rel="noreferrer"
-          className="inline-flex h-9 items-center rounded-[100px] bg-siena px-[18px] text-[13px] font-medium text-creta"
+          className="hidden h-9 items-center rounded-full bg-siena px-4 py-1.5 text-[13px] font-medium text-creta md:inline-flex"
         >
-          Download on App Store ↗
+          Download
         </a>
       </nav>
     </header>
