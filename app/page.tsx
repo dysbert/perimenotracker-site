@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import CalendarDemo from "../components/CalendarDemo";
+import InsightsDemo from "../components/InsightsDemo";
 import { AnimatePresence, motion } from "../components/MotionWrapper";
 
 const stats = [
@@ -237,6 +239,56 @@ export default function HomePage() {
                 </motion.div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[rgba(44,40,37,0.03)] px-5 py-20 md:px-12 md:py-[100px]">
+        <div className="mx-auto max-w-[1100px]">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <p className="text-[11px] uppercase tracking-[0.14em] text-siena">Live preview</p>
+            <h2 className="mt-3 font-display text-[clamp(28px,3.5vw,42px)] text-umbra">
+              Your symptoms, finally visible.
+            </h2>
+            <p className="mt-4 max-w-[500px] text-[15px] leading-relaxed text-pizarra">
+              This is what your data looks like inside peri. Color-coded by symptom type, patterns emerge
+              without you having to look for them.
+            </p>
+          </motion.div>
+
+          <div className="mt-14 grid gap-10 lg:grid-cols-2">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="rounded-[20px] bg-white p-8 shadow-sm"
+            >
+              <div className="mb-6">
+                <p className="text-[13px] font-semibold text-umbra">Calendar</p>
+                <p className="mt-1 text-[13px] text-pizarra">See which days had symptoms and how intense</p>
+              </div>
+              <CalendarDemo />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="rounded-[20px] bg-white p-8 shadow-sm"
+            >
+              <div className="mb-6">
+                <p className="text-[13px] font-semibold text-umbra">Insights</p>
+                <p className="mt-1 text-[13px] text-pizarra">Your most frequent symptoms, ranked</p>
+              </div>
+              <InsightsDemo />
+            </motion.div>
           </div>
         </div>
       </section>
