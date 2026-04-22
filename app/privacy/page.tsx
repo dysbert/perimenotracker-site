@@ -8,8 +8,8 @@ export default function PrivacyPage() {
 
         <div className="space-y-6 text-[15px] leading-[1.7] text-umbra">
           <p>
-            peri ("the App") is a perimenopause symptom tracker for iOS developed by Dysbert
-            Tovar. This policy explains how the App handles your data.
+            peri ("the App") is a perimenopause symptom tracker for iOS developed by double lab.
+            This policy explains how the App handles your data.
           </p>
 
           <section>
@@ -93,12 +93,7 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="mt-10 text-[18px] font-semibold">10. Contact</h2>
-            <p>
-              Questions about this policy? Contact us at{" "}
-              <a className="text-siena hover:underline" href="mailto:dysbert@gmail.com">
-                dysbert@gmail.com
-              </a>
-            </p>
+            <p>Questions about this policy? Contact double lab.</p>
           </section>
         </div>
       </div>

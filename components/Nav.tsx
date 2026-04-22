@@ -11,6 +11,12 @@ export default function Nav() {
 
         <div className="hidden items-center gap-6 md:flex">
           <Link
+            href="/"
+            className="text-[12px] font-medium uppercase tracking-[0.04em] text-pizarra transition-colors hover:text-siena"
+          >
+            Home
+          </Link>
+          <Link
             href="/privacy"
             className="text-[12px] font-medium uppercase tracking-[0.04em] text-pizarra transition-colors hover:text-siena"
           >

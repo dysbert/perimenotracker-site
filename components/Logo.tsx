@@ -16,14 +16,17 @@ export default function Logo({ dark = false, accent = false, className = "" }: L
         style={{ opacity: ruleOpacity }}
       />
       <span
-        className="relative inline-block text-[32px] italic leading-none"
+        className="inline-flex text-[32px] italic leading-none"
         style={{ color: textColor, fontFamily: '"DM Serif Display", Georgia, serif' }}
       >
-        perı
-        <span
-          aria-hidden
-          className="absolute left-[80%] top-[4px] h-[7px] w-[7px] -translate-x-1/2 rounded-full bg-siena"
-        />
+        <span>per</span>
+        <span className="relative inline-block">
+          ı
+          <span
+            aria-hidden
+            className="absolute left-1/2 top-[2px] h-[7px] w-[7px] -translate-x-1/2 rounded-full bg-siena"
+          />
+        </span>
       </span>
     </div>
   );

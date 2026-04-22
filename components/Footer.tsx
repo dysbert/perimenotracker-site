@@ -10,8 +10,7 @@ export default function Footer() {
         </div>
         <div className="space-y-1 text-[12px] text-[rgba(245,240,232,0.35)]">
           <p>© 2026 peri</p>
-          <p>Developed by Dysbert Tovar</p>
-          <p>dysbert@gmail.com</p>
+          <p>Developed by double lab</p>
           <p>
             <Link href="/privacy" className="hover:text-creta">
               Privacy Policy

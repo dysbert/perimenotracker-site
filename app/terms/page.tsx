@@ -9,7 +9,7 @@ export default function TermsPage() {
         <div className="space-y-6 text-[15px] leading-[1.7] text-umbra">
           <p>
             Please read these Terms of Use ("Terms") carefully before using the peri iOS
-            application ("the App"), developed by Dysbert Tovar ("we," "our," or "us"). By
+            application ("the App"), developed by double lab ("we," "our," or "us"). By
             downloading or using the App, you agree to be bound by these Terms.
           </p>
 
@@ -63,7 +63,7 @@ export default function TermsPage() {
           <section>
             <h2 className="mt-10 text-[18px] font-semibold">6. Intellectual Property</h2>
             <p>
-              All content, design, code, and branding in the App are owned by Dysbert Tovar and
+              All content, design, code, and branding in the App are owned by double lab and
               protected by applicable intellectual property laws. You may not reproduce or
               distribute any part of the App without written permission.
             </p>
@@ -81,7 +81,7 @@ export default function TermsPage() {
           <section>
             <h2 className="mt-10 text-[18px] font-semibold">8. Limitation of Liability</h2>
             <p>
-              To the maximum extent permitted by law, Dysbert Tovar shall not be liable for any
+              To the maximum extent permitted by law, double lab shall not be liable for any
               indirect, incidental, special, or consequential damages arising from your use of the
               App, including but not limited to loss of data or health decisions made based on App
               content.
@@ -107,12 +107,7 @@ export default function TermsPage() {
 
           <section>
             <h2 className="mt-10 text-[18px] font-semibold">11. Contact</h2>
-            <p>
-              Questions about these Terms? Contact us at{" "}
-              <a className="text-siena hover:underline" href="mailto:dysbert@gmail.com">
-                dysbert@gmail.com
-              </a>
-            </p>
+            <p>Questions about these Terms? Contact double lab.</p>
           </section>
         </div>
       </div>
