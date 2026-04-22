@@ -32,6 +32,9 @@ export const metadata: Metadata = {
     description: "Track symptoms. See patterns. Share data your doctor can use.",
     images: ["/og-image.png"]
   },
+  icons: {
+    apple: "/apple-touch-icon.png"
+  },
   alternates: { canonical: "https://getperi.app" },
   robots: { index: true, follow: true }
 };
