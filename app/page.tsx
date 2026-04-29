@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import CalendarDemo from "../components/CalendarDemo";
 import InsightsDemo from "../components/InsightsDemo";
@@ -463,17 +464,17 @@ export default function HomePage() {
                 description: "How PerimenoTracker compares to Balance for symptom tracking"
               }
             ].map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
-                className="rounded-2xl border border-[#2A2A2A] bg-[#111] px-5 py-4 flex justify-between items-center group hover:border-[#444] transition-colors"
+                className="group flex items-center justify-between rounded-2xl border border-[rgba(44,40,37,0.12)] bg-white px-5 py-4 transition-colors hover:border-siena"
               >
                 <div>
-                  <p className="text-white font-medium text-sm group-hover:underline">{link.label}</p>
-                  <p className="text-[#666] text-xs mt-0.5">{link.description}</p>
+                  <p className="text-sm font-medium text-umbra group-hover:underline">{link.label}</p>
+                  <p className="mt-0.5 text-xs text-pizarra">{link.description}</p>
                 </div>
-                <span className="text-[#555] shrink-0 ml-4">→</span>
-              </a>
+                <span className="ml-4 shrink-0 text-pizarra">→</span>
+              </Link>
             ))}
           </div>
         </div>
