@@ -1,0 +1,33 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+  canonicalPath?: string;
+  jsonLdInner?: string[];
+}
+
+const { title, description = "", canonicalPath, jsonLdInner = [] } = Astro.props;
+const canonical = canonicalPath ? new URL(canonicalPath, Astro.site).href : undefined;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    {description ? <meta name="description" content={description} /> : null}
+    {canonical ? <link rel="canonical" href={canonical} /> : null}
+    {
+      jsonLdInner.map((inner) => (
+        <script type="application/ld+json" is:inline set:html={inner} />
+      ))
+    }
+    <slot name="head" />
+  </head>
+  <body class="bg-creta font-body text-umbra">
+    <slot />
+  </body>
+</html>

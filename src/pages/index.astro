@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="peri" description="Perimenopause symptom tracker for iOS." canonicalPath="/">
+  <meta slot="head" property="og:type" content="website" />
+
+  <main class="min-h-[60vh] px-8 py-20">
+    <div class="mx-auto max-w-xl text-center">
+      <p class="text-[11px] uppercase tracking-[0.14em] text-siena">peri launch site</p>
+      <h1 class="mt-5 font-display text-[40px] leading-tight italic text-umbra md:text-[48px]">Perimenopause, finally legible.</h1>
+      <div class="mt-10 flex flex-wrap justify-center gap-4">
+        <a href="/blog" class="rounded-full bg-siena px-6 py-3 text-[14px] font-medium text-creta"> Open blog </a>
+        <a href="https://apps.apple.com" target="_blank" rel="noreferrer noopener" class="rounded-full border border-[rgba(44,40,37,0.2)] px-6 py-3 text-[14px] text-umbra">
+          App Store
+        </a>
+      </div>
+      <p class="mt-6 text-[13px] text-pizarra">
+        Marketing shell here; run <code class="rounded bg-[rgba(44,40,37,0.06)] px-1">npm run next:dev</code> for the Next.js homepage.
+      </p>
+    </div>
+  </main>
+</BaseLayout>

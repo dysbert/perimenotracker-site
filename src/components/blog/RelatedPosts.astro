@@ -1,0 +1,47 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+
+type Props = {
+  ids: string[];
+  currentId: string;
+};
+
+const { ids, currentId } = Astro.props;
+const trimmed = ids.map((id) => id.trim()).filter(Boolean);
+
+const allPosts = trimmed.length === 0 ? [] : await getCollection("blog");
+
+const lookup = Object.fromEntries(allPosts.map((entry) => [entry.id, entry])) as Record<string, CollectionEntry<"blog">>;
+const ordered = trimmed.map((id) => lookup[id]).filter((entry): entry is CollectionEntry<"blog"> => Boolean(entry));
+---
+
+{
+  ordered.length === 0 ? null : (
+    <section aria-labelledby={`related-heading-${currentId}`}>
+      <h2 id={`related-heading-${currentId}`} class="font-display text-[22px] text-umbra">
+        Related posts
+      </h2>
+      <ul class="mt-4 space-y-3">
+        {ordered.map((related) => {
+          if (!related || related.id === currentId) return null;
+
+          const title =
+            typeof related.data.title === "string" && related.data.title.trim().length > 0
+              ? related.data.title
+              : related.id;
+
+          return (
+            <li>
+              <a
+                href={`/blog/${related.id}`}
+                class="inline-flex rounded-[12px] border border-[rgba(44,40,37,0.1)] px-4 py-3 text-[14px] text-umbra transition-colors hover:border-siena hover:bg-[rgba(196,113,74,0.06)]"
+              >
+                {title}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  )
+}
