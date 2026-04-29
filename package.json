@@ -6,8 +6,10 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
+    "dev": "next dev",
+    "dev:astro": "astro dev",
+    "build": "next build && astro build && node scripts/merge-static.mjs",
+    "build:astro": "astro build",
     "preview": "astro preview",
     "sync": "astro sync",
     "next:dev": "next dev",

@@ -7,7 +7,13 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "strictNullChecks": true
   },
   "include": [
     ".astro/types.d.ts",
@@ -22,5 +28,14 @@
     "components/**/*.tsx",
     ".next/types/**/*.ts"
   ],
-  "exclude": ["node_modules", "App/**", "Views/**", "Models/**", "Services/**", "ViewModels/**", "dist", "out"]
+  "exclude": [
+    "node_modules",
+    "App/**",
+    "Views/**",
+    "Models/**",
+    "Services/**",
+    "ViewModels/**",
+    "dist",
+    "out"
+  ]
 }
