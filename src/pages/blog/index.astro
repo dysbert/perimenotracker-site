@@ -1,6 +1,8 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import SiteFooter from "../../components/SiteFooter.astro";
+import SiteNav from "../../components/SiteNav.astro";
 
 const posts = await getCollection("blog");
 
@@ -14,14 +16,7 @@ posts.sort((a, b) => {
 <BaseLayout title="Blog | peri" description="Perimenopause guides and practical tracking tips from peri." canonicalPath="/blog">
   <meta slot="head" property="og:type" content="website" />
 
-  <header
-    class="sticky top-0 z-40 border-b border-[rgba(44,40,37,0.08)] bg-[rgba(245,240,232,0.92)] backdrop-blur-[12px]"
-  >
-    <nav class="mx-auto flex h-[52px] w-full max-w-[1100px] items-center justify-between px-5 md:px-12">
-      <a href="/" class="font-display text-[18px] italic text-umbra">peri</a>
-      <a href="/" class="text-[12px] font-medium uppercase tracking-[0.04em] text-pizarra hover:text-siena">Home</a>
-    </nav>
-  </header>
+  <SiteNav />
 
   <section class="px-5 py-16 md:px-12 md:py-20">
     <div class="mx-auto max-w-[900px]">
@@ -60,4 +55,6 @@ posts.sort((a, b) => {
       </div>
     </div>
   </section>
+
+  <SiteFooter />
 </BaseLayout>
