@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
+<style>
+  body { background: #F5F0E8; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; gap: 48px; margin: 0; font-family: sans-serif; }
+  .label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #9EA3A8; margin-bottom: 8px; text-align: center; }
+  .box { display: flex; flex-direction: column; align-items: center; }
+  .dark { background: #2C2825; padding: 32px 48px; border-radius: 16px; }
+  .row { display: flex; gap: 64px; align-items: center; }
+</style>
+</head>
+<body>
+
+<div class="row">
+
+  <!-- Light -->
+  <div class="box">
+    <p class="label">Light</p>
+    <svg width="100" height="48" viewBox="0 0 100 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <style>
+        .t1 { font-family: 'DM Serif Display', serif; font-style: italic; font-size: 32px; fill: #2C2825; }
+      </style>
+      <text x="4" y="36" class="t1">perı</text>
+      <circle cx="62" cy="9.5" r="3.5" fill="#C4714A"/>
+    </svg>
+  </div>
+
+  <!-- Dark -->
+  <div class="box dark">
+    <p class="label" style="color:#6A6762">Dark</p>
+    <svg width="100" height="48" viewBox="0 0 100 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <style>
+        .t2 { font-family: 'DM Serif Display', serif; font-style: italic; font-size: 32px; fill: #F5F0E8; }
+      </style>
+      <text x="4" y="36" class="t2">perı</text>
+      <circle cx="62" cy="9.5" r="3.5" fill="#C4714A"/>
+    </svg>
+  </div>
+
+</div>
+
+<!-- Dot position reference — nudge cx to fine-tune -->
+<div class="box">
+  <p class="label">cx reference — ajusta si hace falta</p>
+  <div style="display:flex; gap:24px; align-items:center;">
+    <div style="text-align:center">
+      <svg width="100" height="48" viewBox="0 0 100 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <style>.t3 { font-family: 'DM Serif Display', serif; font-style: italic; font-size: 32px; fill: #2C2825; }</style>
+        <text x="4" y="36" class="t3">perı</text>
+        <circle cx="60" cy="9.5" r="3.5" fill="#C4714A"/>
+      </svg>
+      <p style="font-size:10px;color:#9EA3A8">cx 60</p>
+    </div>
+    <div style="text-align:center">
+      <svg width="100" height="48" viewBox="0 0 100 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <style>.t4 { font-family: 'DM Serif Display', serif; font-style: italic; font-size: 32px; fill: #2C2825; }</style>
+        <text x="4" y="36" class="t4">perı</text>
+        <circle cx="62" cy="9.5" r="3.5" fill="#C4714A"/>
+      </svg>
+      <p style="font-size:10px;color:#9EA3A8">cx 62 ← actual</p>
+    </div>
+    <div style="text-align:center">
+      <svg width="100" height="48" viewBox="0 0 100 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <style>.t5 { font-family: 'DM Serif Display', serif; font-style: italic; font-size: 32px; fill: #2C2825; }</style>
+        <text x="4" y="36" class="t5">perı</text>
+        <circle cx="64" cy="9.5" r="3.5" fill="#C4714A"/>
+      </svg>
+      <p style="font-size:10px;color:#9EA3A8">cx 64</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>peri — App Icon</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #1a1816;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 48px;
+    padding: 60px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(245,240,232,0.3);
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  .icon-group {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .icon-wrap { display: flex; flex-direction: column; align-items: center; }
+</style>
+</head>
+<body>
+
+<div class="icon-group">
+
+  <!-- 1024x1024 preview (scaled to 320) -->
+  <div class="icon-wrap">
+    <svg width="320" height="320" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&amp;display=swap');
+        </style>
+      </defs>
+      <!-- background -->
+      <rect width="1024" height="1024" fill="#2C2825"/>
+      <!-- wordmark -->
+      <text
+        x="512"
+        y="580"
+        font-family="'DM Serif Display', Georgia, serif"
+        font-style="italic"
+        font-size="380"
+        fill="#F5F0E8"
+        text-anchor="middle"
+        dominant-baseline="auto"
+        letter-spacing="-6"
+      >peri</text>
+      <!-- i-dot replaced with siena circle -->
+      <!-- We override the i dot with a colored circle -->
+      <!-- dot position estimated for this font at this size -->
+      <circle cx="710" cy="222" r="28" fill="#C4714A"/>
+    </svg>
+    <div class="label">1024 × 1024 — principal</div>
+  </div>
+
+  <!-- 60x60 (iPhone home) -->
+  <div class="icon-wrap">
+    <svg width="120" height="120" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+      <rect width="1024" height="1024" fill="#2C2825"/>
+      <text x="512" y="580" font-family="'DM Serif Display', Georgia, serif" font-style="italic" font-size="380" fill="#F5F0E8" text-anchor="middle" dominant-baseline="auto" letter-spacing="-6">peri</text>
+      <circle cx="710" cy="222" r="28" fill="#C4714A"/>
+    </svg>
+    <div class="label">60pt — iPhone home</div>
+  </div>
+
+  <!-- 40x40 (spotlight) -->
+  <div class="icon-wrap">
+    <svg width="80" height="80" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+      <rect width="1024" height="1024" fill="#2C2825"/>
+      <text x="512" y="580" font-family="'DM Serif Display', Georgia, serif" font-style="italic" font-size="380" fill="#F5F0E8" text-anchor="middle" dominant-baseline="auto" letter-spacing="-6">peri</text>
+      <circle cx="710" cy="222" r="28" fill="#C4714A"/>
+    </svg>
+    <div class="label">40pt — spotlight</div>
+  </div>
+
+  <!-- 29x29 (settings) -->
+  <div class="icon-wrap">
+    <svg width="58" height="58" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+      <rect width="1024" height="1024" fill="#2C2825"/>
+      <text x="512" y="580" font-family="'DM Serif Display', Georgia, serif" font-style="italic" font-size="380" fill="#F5F0E8" text-anchor="middle" dominant-baseline="auto" letter-spacing="-6">peri</text>
+      <circle cx="710" cy="222" r="28" fill="#C4714A"/>
+    </svg>
+    <div class="label">29pt — settings</div>
+  </div>
+
+</div>
+
+<!-- Creta variant -->
+<div class="icon-group">
+  <div class="icon-wrap">
+    <svg width="320" height="320" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+      <rect width="1024" height="1024" fill="#F5F0E8"/>
+      <text x="512" y="580" font-family="'DM Serif Display', Georgia, serif" font-style="italic" font-size="380" fill="#2C2825" text-anchor="middle" dominant-baseline="auto" letter-spacing="-6">peri</text>
+      <circle cx="710" cy="222" r="28" fill="#C4714A"/>
+    </svg>
+    <div class="label">variante Creta (light mode)</div>
+  </div>
+
+  <!-- Siena variant -->
+  <div class="icon-wrap">
+    <svg width="320" height="320" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+      <rect width="1024" height="1024" fill="#C4714A"/>
+      <text x="512" y="580" font-family="'DM Serif Display', Georgia, serif" font-style="italic" font-size="380" fill="#F5F0E8" text-anchor="middle" dominant-baseline="auto" letter-spacing="-6">peri</text>
+      <circle cx="710" cy="222" r="28" fill="#2C2825"/>
+    </svg>
+    <div class="label">variante Siena</div>
+  </div>
+</div>
+
+<div style="font-size: 12px; color: rgba(245,240,232,0.2); text-align: center; max-width: 400px; line-height: 1.8;">
+  El punto de la "i" está reemplazado por un círculo Siena.<br>
+  Versión principal: Umbra + Creta.<br>
+  Exportar como PNG 1024×1024 para App Store Connect.
+</div>
+
+</body>
+</html>

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peri — Logo Proposals</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --umbra: #2C2825;
+    --creta: #F5F0E8;
+    --siena: #C4714A;
+    --salvia: #7A9E8E;
+    --lavanda: #7C6E8A;
+    --ambar: #E8B86D;
+    --pizarra: #9EA3A8;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--creta);
+    color: var(--umbra);
+    font-family: 'Inter', sans-serif;
+    padding: 60px 40px;
+  }
+
+  .header {
+    margin-bottom: 80px;
+  }
+
+  .header-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--pizarra);
+    margin-bottom: 12px;
+  }
+
+  .header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--umbra);
+    line-height: 1.2;
+  }
+
+  .header p {
+    margin-top: 16px;
+    font-size: 15px;
+    color: var(--pizarra);
+    max-width: 520px;
+    line-height: 1.65;
+  }
+
+  .name-section {
+    background: var(--umbra);
+    border-radius: 16px;
+    padding: 48px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+
+  .name-section h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--creta);
+    margin-bottom: 20px;
+    grid-column: 1 / -1;
+  }
+
+  .name-option {
+    border: 1px solid rgba(245,240,232,0.15);
+    border-radius: 12px;
+    padding: 32px;
+  }
+
+  .name-option.recommended {
+    border-color: var(--siena);
+    position: relative;
+  }
+
+  .recommended-badge {
+    position: absolute;
+    top: -12px;
+    left: 24px;
+    background: var(--siena);
+    color: var(--creta);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 20px;
+  }
+
+  .name-display {
+    font-family: 'DM Serif Display', serif;
+    font-size: 48px;
+    font-style: italic;
+    color: var(--creta);
+    margin-bottom: 16px;
+  }
+
+  .name-option.recommended .name-display {
+    color: var(--siena);
+  }
+
+  .name-verdict {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--pizarra);
+    margin-bottom: 12px;
+  }
+
+  .name-desc {
+    font-size: 13px;
+    color: rgba(245,240,232,0.65);
+    line-height: 1.7;
+  }
+
+  .name-pros {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .pro {
+    font-size: 12px;
+    color: var(--salvia);
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .pro::before { content: '→'; flex-shrink: 0; }
+
+  .con {
+    font-size: 12px;
+    color: var(--ambar);
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .con::before { content: '—'; flex-shrink: 0; }
+
+  /* LOGO PROPOSALS */
+  .proposals {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .proposal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+
+  .proposal-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--pizarra);
+    margin-bottom: 8px;
+  }
+
+  .proposal h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    color: var(--umbra);
+    margin-bottom: 12px;
+  }
+
+  .proposal-desc {
+    font-size: 14px;
+    color: var(--pizarra);
+    line-height: 1.7;
+    margin-bottom: 24px;
+  }
+
+  .proposal-rationale {
+    font-size: 13px;
+    color: var(--umbra);
+    line-height: 1.7;
+    padding: 20px;
+    background: rgba(44,40,37,0.05);
+    border-radius: 10px;
+    border-left: 2px solid var(--siena);
+  }
+
+  .logo-stage {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .logo-variant {
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    min-height: 160px;
+  }
+
+  .logo-variant.light { background: var(--creta); border: 1px solid rgba(44,40,37,0.1); }
+  .logo-variant.dark { background: var(--umbra); }
+  .logo-variant.siena { background: var(--siena); }
+
+  .variant-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--pizarra);
+    margin-top: 6px;
+    text-align: center;
+  }
+
+  /* ── LOGO A: Editorial Wordmark ── */
+  .logo-a {
+    display: flex;
+    align-items: baseline;
+    gap: 0;
+    position: relative;
+  }
+
+  .logo-a-rule {
+    width: 20px;
+    height: 1.5px;
+    background: var(--siena);
+    margin-right: 10px;
+    margin-bottom: 5px;
+    align-self: center;
+    flex-shrink: 0;
+  }
+
+  .logo-a-word {
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    font-size: 52px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    position: relative;
+  }
+
+  .logo-a-word .p { }
+  .logo-a-word .e { }
+  .logo-a-word .r { }
+  .logo-a-word .i-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .logo-a-word .i-letter {
+    display: inline-block;
+  }
+
+  .logo-a-dot {
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 7px;
+    height: 7px;
+    background: var(--siena);
+    border-radius: 50%;
+  }
+
+  .dark .logo-a-word { color: var(--creta); }
+  .dark .logo-a-rule { background: var(--creta); opacity: 0.4; }
+  .siena .logo-a-word { color: var(--creta); }
+  .siena .logo-a-rule { background: var(--creta); opacity: 0.5; }
+  .siena .logo-a-dot { background: var(--creta); }
+
+  /* ── LOGO B: Arc Symbol ── */
+  .logo-b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .logo-b-mark {
+    width: 56px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  .logo-b-wordmark {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    letter-spacing: 0.18em;
+    text-transform: lowercase;
+    color: var(--umbra);
+  }
+
+  .dark .logo-b-wordmark { color: var(--creta); }
+  .siena .logo-b-wordmark { color: var(--creta); }
+
+  /* horizontal version */
+  .logo-b-h {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+
+  /* ── LOGO C: Signal Mark ── */
+  .logo-c {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .logo-c-mark {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+  }
+
+  .logo-c-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .logo-c-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 38px;
+    line-height: 1;
+    color: var(--umbra);
+    letter-spacing: -0.01em;
+  }
+
+  .logo-c-tagline {
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--pizarra);
+    margin-top: 3px;
+  }
+
+  .dark .logo-c-name { color: var(--creta); }
+  .dark .logo-c-tagline { color: rgba(245,240,232,0.4); }
+  .siena .logo-c-name { color: var(--creta); }
+  .siena .logo-c-tagline { color: rgba(245,240,232,0.6); }
+
+  /* divider */
+  .divider {
+    height: 1px;
+    background: rgba(44,40,37,0.1);
+    margin: 80px 0;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-label">Peri — Logo Proposals · 2026</div>
+  <h1>Identidad Visual<br>Tres Propuestas</h1>
+  <p>Cada propuesta parte del mismo sistema de diseño pero explora un vector distinto: la voz editorial, la precisión científica, y el habla de los datos.</p>
+</div>
+
+<!-- NAME RECOMMENDATION -->
+<div class="name-section">
+  <h2>01 — El Nombre</h2>
+
+  <div class="name-option recommended">
+    <div class="recommended-badge">Recomendado</div>
+    <div class="name-display">peri</div>
+    <div class="name-verdict">Mantener la idea original</div>
+    <div class="name-desc">Corto, directo, pronunciable en cualquier idioma. "Peri" es exactamente lo que el producto es —sin explicaciones. En mitología persa, un peri es un ser etéreo de luz: connotación hermosa y completamente accidental.</div>
+    <div class="name-pros">
+      <div class="pro">Funciona como marca en App Store, dominio, social</div>
+      <div class="pro">No necesita subtítulo para entenderse</div>
+      <div class="pro">Memorable. Monossílabo efectivo en cualquier idioma</div>
+      <div class="pro">peri.app disponible en muchos TLDs</div>
+    </div>
+  </div>
+
+  <div class="name-option">
+    <div class="name-display">Umbra</div>
+    <div class="name-verdict">Alternativa si "peri" se descarta</div>
+    <div class="name-desc">Ya existe en el sistema como color base. Significa la parte más oscura del eclipse —la transición oscura antes de la claridad. Astronómicamente preciso. Visualmente potente.</div>
+    <div class="name-pros">
+      <div class="pro">Más poético, más de marca lifestyle</div>
+      <div class="pro">Sin competencia directa en health apps</div>
+      <div class="con">Más difícil de conectar inmediatamente con perimenopause</div>
+      <div class="con">Puede leerse como "sombra" en sentido negativo</div>
+    </div>
+  </div>
+</div>
+
+<!-- PROPOSALS -->
+<div class="proposals">
+
+  <!-- ── PROPUESTA A ── -->
+  <div class="proposal">
+    <div>
+      <div class="proposal-label">Propuesta A</div>
+      <h3>Editorial Wordmark</h3>
+      <div class="proposal-desc">
+        El wordmark es el logo completo. "peri" en DM Serif Display italic, con una regla horizontal en Siena a la izquierda que actúa como línea de base editorial —la línea antes de los datos. El punto de la "i" se reemplaza por un círculo Siena: el único dato que siempre está presente.
+      </div>
+      <div class="proposal-rationale">
+        <strong>Rationale:</strong> Este es el enfoque que usaría AREA 17 para un proyecto editorial de primera categoría. El serif italic da autoridad literaria; la regla izquierda es el único elemento gráfico, funciona como headline rule en cualquier publicación de calidad. Es el sistema más escalable: funciona igual a 16px que en un letrero físico.
+      </div>
+    </div>
+
+    <div class="logo-stage">
+      <!-- Light version -->
+      <div class="logo-variant light">
+        <div class="logo-a">
+          <div class="logo-a-rule"></div>
+          <div class="logo-a-word" style="color: var(--umbra);">
+            per<span class="i-container"><span class="i-letter">i</span><span class="logo-a-dot"></span></span>
+          </div>
+        </div>
+      </div>
+      <div class="variant-label">Versión principal — sobre Creta</div>
+
+      <!-- Dark version -->
+      <div class="logo-variant dark">
+        <div class="logo-a dark">
+          <div class="logo-a-rule" style="background: rgba(245,240,232,0.35);"></div>
+          <div class="logo-a-word" style="color: var(--creta);">
+            per<span class="i-container"><span class="i-letter">i</span><span class="logo-a-dot" style="background: var(--siena);"></span></span>
+          </div>
+        </div>
+      </div>
+      <div class="variant-label">Versión oscura — sobre Umbra</div>
+
+      <!-- Siena version -->
+      <div class="logo-variant siena">
+        <div class="logo-a">
+          <div class="logo-a-rule" style="background: rgba(245,240,232,0.5);"></div>
+          <div class="logo-a-word" style="color: var(--creta);">
+            per<span class="i-container"><span class="i-letter">i</span><span class="logo-a-dot" style="background: var(--creta);"></span></span>
+          </div>
+        </div>
+      </div>
+      <div class="variant-label">Versión acento — sobre Siena</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ── PROPUESTA B ── -->
+  <div class="proposal">
+    <div>
+      <div class="proposal-label">Propuesta B</div>
+      <h3>Arc System</h3>
+      <div class="proposal-desc">
+        Un símbolo de dos arcos concéntricos abiertos —una órbita incompleta. Representa el "peri": alrededor de, en torno a. La apertura superior es la transición, el momento que la app registra. Debajo, "peri" en Inter Light con tracking amplio: sans-serif como contrapeso al símbolo orgánico.
+      </div>
+      <div class="proposal-rationale">
+        <strong>Rationale:</strong> Este sistema separa el símbolo del wordmark, lo que permite usar el arco solo como ícono de app. El arc doble lee como ciclo, como datos sobre el tiempo, como el movimiento orbital que mide el cuerpo. Es la opción más versátil para producto digital.
+      </div>
+    </div>
+
+    <div class="logo-stage">
+      <!-- Light vertical -->
+      <div class="logo-variant light">
+        <div class="logo-b">
+          <svg class="logo-b-mark" viewBox="0 0 56 40" fill="none">
+            <!-- outer arc -->
+            <path d="M4 36 A26 26 0 0 1 52 36" stroke="#C4714A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <!-- inner arc -->
+            <path d="M12 36 A18 18 0 0 1 44 36" stroke="#9EA3A8" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+            <!-- center dot -->
+            <circle cx="28" cy="36" r="2.5" fill="#C4714A"/>
+          </svg>
+          <div class="logo-b-wordmark" style="color: var(--umbra);">peri</div>
+        </div>
+      </div>
+      <div class="variant-label">Versión vertical — sobre Creta</div>
+
+      <!-- Dark horizontal -->
+      <div class="logo-variant dark">
+        <div class="logo-b-h">
+          <svg width="44" height="32" viewBox="0 0 56 40" fill="none">
+            <path d="M4 36 A26 26 0 0 1 52 36" stroke="#C4714A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M12 36 A18 18 0 0 1 44 36" stroke="rgba(245,240,232,0.3)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+            <circle cx="28" cy="36" r="2.5" fill="#C4714A"/>
+          </svg>
+          <div class="logo-b-wordmark" style="color: var(--creta); font-size: 26px;">peri</div>
+        </div>
+      </div>
+      <div class="variant-label">Versión horizontal — sobre Umbra</div>
+
+      <!-- App icon -->
+      <div class="logo-variant" style="background: var(--umbra); border-radius: 28px; min-height: 120px;">
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+          <path d="M8 52 A28 28 0 0 1 52 52" stroke="#C4714A" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M16 52 A19 19 0 0 1 44 52" stroke="rgba(245,240,232,0.25)" stroke-width="2" stroke-linecap="round" fill="none"/>
+          <circle cx="30" cy="52" r="3" fill="#C4714A"/>
+        </svg>
+      </div>
+      <div class="variant-label">App icon — vista previa</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ── PROPUESTA C ── -->
+  <div class="proposal">
+    <div>
+      <div class="proposal-label">Propuesta C</div>
+      <h3>Signal Mark</h3>
+      <div class="proposal-desc">
+        Una línea horizontal en Siena que dibuja una onda limpia: plana, una cresta, plana otra vez. Es la visualización más honesta del producto —convierte ruido biológico en señal legible. La onda es el mark; "peri" en DM Serif Display es el wordmark. Juntos forman el lockup completo.
+      </div>
+      <div class="proposal-rationale">
+        <strong>Rationale:</strong> Este concepto deriva directamente del claim central: "convierte ruido biológico en señal comprensible". La onda no es decorativa —es el producto. El mark solo funciona como elemento gráfico en dashboards, reportes PDF y material clínico. Es el más conceptualmente denso y el más alineado con el posicionamiento de datos.
+      </div>
+    </div>
+
+    <div class="logo-stage">
+      <!-- Light full lockup -->
+      <div class="logo-variant light">
+        <div class="logo-c">
+          <svg class="logo-c-mark" viewBox="0 0 48 48" fill="none">
+            <!-- signal line -->
+            <path d="M4 24 L14 24 Q17 24 18 20 L20 12 Q21 8 23 8 Q25 8 26 12 L28 28 Q29 32 31 32 Q33 32 34 28 L36 20 Q37 16 38 16 L44 16" stroke="#C4714A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+          <div class="logo-c-text">
+            <div class="logo-c-name" style="color: var(--umbra);">peri</div>
+            <div class="logo-c-tagline" style="color: var(--pizarra);">symptom tracker</div>
+          </div>
+        </div>
+      </div>
+      <div class="variant-label">Lockup completo — sobre Creta</div>
+
+      <!-- Dark -->
+      <div class="logo-variant dark">
+        <div class="logo-c">
+          <svg class="logo-c-mark" viewBox="0 0 48 48" fill="none">
+            <path d="M4 24 L14 24 Q17 24 18 20 L20 12 Q21 8 23 8 Q25 8 26 12 L28 28 Q29 32 31 32 Q33 32 34 28 L36 20 Q37 16 38 16 L44 16" stroke="#C4714A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+          <div class="logo-c-text">
+            <div class="logo-c-name" style="color: var(--creta);">peri</div>
+            <div class="logo-c-tagline" style="color: rgba(245,240,232,0.35);">symptom tracker</div>
+          </div>
+        </div>
+      </div>
+      <div class="variant-label">Versión oscura — sobre Umbra</div>
+
+      <!-- Mark only -->
+      <div class="logo-variant" style="background: var(--creta); border: 1px solid rgba(44,40,37,0.1); min-height: 100px;">
+        <svg width="120" height="40" viewBox="0 0 120 40" fill="none">
+          <path d="M4 20 L28 20 Q33 20 35 14 L38 6 Q40 2 43 2 Q46 2 48 6 L52 32 Q54 37 57 37 Q60 37 62 32 L66 14 Q68 8 70 8 L116 8" stroke="#C4714A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+      </div>
+      <div class="variant-label">Mark solo — para uso en datos / reportes</div>
+    </div>
+  </div>
+
+</div>
+
+<div style="margin-top: 80px; padding-top: 40px; border-top: 1px solid rgba(44,40,37,0.1);">
+  <div class="header-label">Recomendación final</div>
+  <p style="font-size: 15px; color: var(--umbra); line-height: 1.8; max-width: 600px; margin-top: 8px;">
+    <strong>Propuesta A + nombre "peri".</strong> El wordmark serif italic tiene la voz más cercana a la dirección editorial que define el sistema. No necesita símbolo porque la tipografía ya tiene suficiente carácter. La Propuesta B es la segunda opción si el producto necesita un ícono autónomo reconocible sin texto (notificaciones, widgets). La Propuesta C es la más conceptual —reservarla para uso como elemento gráfico en datos/reportes, no como logo principal.
+  </p>
+</div>
+
+</body>
+</html>
