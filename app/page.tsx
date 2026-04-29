@@ -116,12 +116,12 @@ const faqs = [
     a: "Yes. Perimenopause is diagnosed based on symptoms and history, not a single test. Consistent tracking gives your doctor the data needed to make accurate assessments and better treatment decisions — far more useful than a verbal summary from memory."
   },
   {
-    q: "Can PerimenoTracker help at a doctor appointment?",
-    a: "Yes. PerimenoTracker exports a structured PDF report covering your last 1–3 months of symptom data — cycle history, hot flash frequency, severity trends — formatted for your gynecologist to review in under 60 seconds."
+    q: "Can Peri Tracker help at a doctor appointment?",
+    a: "Yes. Peri Tracker exports a structured PDF report covering your last 1–3 months of symptom data — cycle history, hot flash frequency, severity trends — formatted for your gynecologist to review in under 60 seconds."
   },
   {
-    q: "Is PerimenoTracker free?",
-    a: "PerimenoTracker offers a free 14-day trial with full access to all features. After the trial, a subscription is required: $2.99/month or $24.99/year. No account required."
+    q: "Is Peri Tracker free?",
+    a: "Peri Tracker offers a free 14-day trial with full access to all features. After the trial, a subscription is required: $2.99/month or $24.99/year. No account required."
   }
 ];
 
@@ -436,7 +436,7 @@ export default function HomePage() {
               {
                 href: "/perimenopause-symptom-tracker",
                 label: "Perimenopause Symptom Tracker",
-                description: "Full overview of what PerimenoTracker tracks and how it works"
+                description: "Full overview of what Peri Tracker tracks and how it works"
               },
               {
                 href: "/hot-flash-tracker",
@@ -461,7 +461,7 @@ export default function HomePage() {
               {
                 href: "/balance-app-alternative",
                 label: "Balance App Alternative",
-                description: "How PerimenoTracker compares to Balance for symptom tracking"
+                description: "How Peri Tracker compares to Balance for symptom tracking"
               }
             ].map((link) => (
               <Link

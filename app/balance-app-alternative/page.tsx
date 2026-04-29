@@ -4,9 +4,9 @@ import { SeoLandingPage } from "../../components/SeoLandingPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Balance App Alternative for Perimenopause Tracking — PerimenoTracker",
+  title: "Balance App Alternative for Perimenopause Tracking — Peri Tracker",
   description:
-    "Looking for a Balance app alternative focused on symptom tracking? PerimenoTracker logs daily symptoms with severity, exports a doctor report PDF, and keeps data local.",
+    "Looking for a Balance app alternative focused on symptom tracking? Peri Tracker logs daily symptoms with severity, exports a doctor report PDF, and keeps data local.",
   keywords: [
     "balance app alternative",
     "balance menopause app alternative",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "balance app vs perimenotracker",
   ],
   alternates: {
-    canonical: "https://perimenotracker.app/balance-app-alternative",
+    canonical: "https://peritracker.app/balance-app-alternative",
   },
 };
 
@@ -24,8 +24,8 @@ export default function BalanceAppAlternativePage() {
     <SeoLandingPage
       eyebrow="Balance App Alternative"
       title="A Balance App Alternative Built for Symptom Tracking and Doctor Visits"
-      subtitle="Balance is great for education and community. If what you need is a detailed daily symptom log and a doctor report PDF, PerimenoTracker is built for that."
-      quickAnswer="PerimenoTracker and Balance serve different primary purposes. Balance focuses on educational content and community. PerimenoTracker focuses on structured daily symptom logging with severity ratings, cycle tracking optimized for irregular periods, and a PDF export formatted for gynecologist appointments. Data is stored locally — no cloud, no account."
+      subtitle="Balance is great for education and community. If what you need is a detailed daily symptom log and a doctor report PDF, Peri Tracker is built for that."
+      quickAnswer="Peri Tracker and Balance serve different primary purposes. Balance focuses on educational content and community. Peri Tracker focuses on structured daily symptom logging with severity ratings, cycle tracking optimized for irregular periods, and a PDF export formatted for gynecologist appointments. Data is stored locally — no cloud, no account."
       audienceBullets={[
         "Balance users who want more granular symptom tracking",
         "Women who need a structured report to bring to a doctor appointment",
@@ -41,7 +41,7 @@ export default function BalanceAppAlternativePage() {
         "Local-first: data stays on your iPhone, no account required",
       ]}
       howToSteps={[
-        "Download PerimenoTracker — no account or sign-up required",
+        "Download Peri Tracker — no account or sign-up required",
         "Set up your symptom profile in 2 minutes",
         "Log symptoms daily — takes under 2 minutes per check-in",
         "Review your trends weekly to understand your patterns",
@@ -50,19 +50,19 @@ export default function BalanceAppAlternativePage() {
       faqs={[
         {
           q: "What is a good alternative to the Balance menopause app?",
-          a: "PerimenoTracker is a strong alternative if your main need is structured daily symptom tracking and generating data for doctor appointments. Balance is better for educational content and peer community. Many women use both.",
+          a: "Peri Tracker is a strong alternative if your main need is structured daily symptom tracking and generating data for doctor appointments. Balance is better for educational content and peer community. Many women use both.",
         },
         {
-          q: "Is PerimenoTracker better than Balance?",
-          a: "It depends on what you need. PerimenoTracker has more granular symptom tracking, severity ratings, and a PDF doctor report that Balance does not offer. Balance has more extensive educational content and a community. They serve different primary purposes.",
+          q: "Is Peri Tracker better than Balance?",
+          a: "It depends on what you need. Peri Tracker has more granular symptom tracking, severity ratings, and a PDF doctor report that Balance does not offer. Balance has more extensive educational content and a community. They serve different primary purposes.",
         },
         {
-          q: "Does PerimenoTracker have community features like Balance?",
-          a: "No. PerimenoTracker is focused on personal symptom tracking and clinical data, not community. If peer support and expert content are important to you, Balance fills that role well and can complement PerimenoTracker.",
+          q: "Does Peri Tracker have community features like Balance?",
+          a: "No. Peri Tracker is focused on personal symptom tracking and clinical data, not community. If peer support and expert content are important to you, Balance fills that role well and can complement Peri Tracker.",
         },
         {
-          q: "Is PerimenoTracker available on Android like Balance?",
-          a: "Currently, PerimenoTracker is iOS only. Balance is available on both iOS and Android.",
+          q: "Is Peri Tracker available on Android like Balance?",
+          a: "Currently, Peri Tracker is iOS only. Balance is available on both iOS and Android.",
         },
       ]}
       relatedLinks={[
@@ -71,7 +71,7 @@ export default function BalanceAppAlternativePage() {
         { href: "/hot-flash-tracker", label: "Hot Flash Tracker", description: "Track hot flash frequency, severity, and time of day" },
         { href: "/apple-health-perimenopause", label: "Apple Health Integration", description: "Auto-import sleep and heart rate data from Apple Watch" },
       ]}
-      legalNote="PerimenoTracker is a personal health logging tool and is not a medical device. It does not diagnose, treat, or provide medical advice. Consult a qualified healthcare professional for medical guidance."
+      legalNote="Peri Tracker is a personal health logging tool and is not a medical device. It does not diagnose, treat, or provide medical advice. Consult a qualified healthcare professional for medical guidance."
     />
   );
 }

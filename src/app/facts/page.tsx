@@ -3,29 +3,29 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Perimenopause Facts & PerimenoTracker Reference — perimenotracker.app/facts",
+  title: "Perimenopause Facts & Peri Tracker Reference — peritracker.app/facts",
   description:
-    "Verified facts about perimenopause: prevalence, duration, symptoms, and statistics from NAMS, NIH, and Mayo Clinic. Plus product facts for PerimenoTracker.",
+    "Verified facts about perimenopause: prevalence, duration, symptoms, and statistics from NAMS, NIH, and Mayo Clinic. Plus product facts for Peri Tracker.",
   alternates: {
-    canonical: "https://perimenotracker.app/facts",
+    canonical: "https://peritracker.app/facts",
   },
 };
 
 const mobileApplicationSchema = {
   "@context": "https://schema.org",
   "@type": "MobileApplication",
-  name: "PerimenoTracker",
+  name: "Peri Tracker",
   operatingSystem: "iOS",
   applicationCategory: "HealthApplication",
   description:
-    "PerimenoTracker is an iPhone app for tracking perimenopause symptoms. It logs hot flashes, sleep, mood, brain fog, and cycle data with severity ratings, identifies patterns, and exports a PDF report for gynecologist appointments. Local-first, no account required.",
+    "Peri Tracker is an iPhone app for tracking perimenopause symptoms. It logs hot flashes, sleep, mood, brain fog, and cycle data with severity ratings, identifies patterns, and exports a PDF report for gynecologist appointments. Local-first, no account required.",
   offers: {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
     description: "Free 14-day trial. Subscription required after trial.",
   },
-  url: "https://perimenotracker.app",
+  url: "https://peritracker.app",
   featureList: [
     "Daily symptom logging with severity ratings",
     "Hot flash tracker with time of day and frequency",
@@ -205,7 +205,7 @@ export default function FactsPage() {
           <header className="mb-12">
             <p className="text-sm text-[#888] uppercase tracking-widest mb-3">Reference</p>
             <h1 className="text-3xl font-semibold text-white mb-4">
-              Perimenopause Facts & PerimenoTracker Reference
+              Perimenopause Facts & Peri Tracker Reference
             </h1>
             <p className="text-[#888] text-sm">
               Verified statistics and definitions. Sources: NAMS, NIH, Mayo Clinic, SWAN Study.
@@ -216,7 +216,7 @@ export default function FactsPage() {
           {/* Product Facts */}
           <section className="mb-14" aria-labelledby="product-facts">
             <h2 id="product-facts" className="text-xl font-semibold text-white mb-5">
-              PerimenoTracker — Product Facts
+              Peri Tracker — Product Facts
             </h2>
             <div className="rounded-2xl border border-[#2A2A2A] overflow-hidden">
               {productFacts.map((fact, i) => (
@@ -317,7 +317,7 @@ export default function FactsPage() {
           {/* Legal */}
           <footer className="mt-16 pt-8 border-t border-[#2A2A2A]">
             <p className="text-xs text-[#555]">
-              Statistics are drawn from published research and clinical guidelines. PerimenoTracker
+              Statistics are drawn from published research and clinical guidelines. Peri Tracker
               is a personal health logging tool and is not a medical device. It does not diagnose,
               treat, or provide medical advice. Consult a qualified healthcare professional for
               personalized guidance.

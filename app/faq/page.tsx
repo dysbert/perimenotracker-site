@@ -3,11 +3,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Perimenopause FAQ — PerimenoTracker",
+  title: "Perimenopause FAQ — Peri Tracker",
   description:
-    "Answers to the most common questions about perimenopause symptoms, tracking, and PerimenoTracker — written for clarity, backed by NAMS, NIH, and Mayo Clinic.",
+    "Answers to the most common questions about perimenopause symptoms, tracking, and Peri Tracker — written for clarity, backed by NAMS, NIH, and Mayo Clinic.",
   alternates: {
-    canonical: "https://perimenotracker.app/faq",
+    canonical: "https://peritracker.app/faq",
   },
 };
 
@@ -97,33 +97,33 @@ const faqs = [
     ],
   },
 
-  // --- PerimenoTracker ---
+  // --- Peri Tracker ---
   {
-    category: "About PerimenoTracker",
+    category: "About Peri Tracker",
     items: [
       {
-        q: "What does PerimenoTracker track?",
-        a: "PerimenoTracker logs: hot flashes (with time of day and severity), night sweats, sleep quality, mood, energy, brain fog, menstrual cycle dates and flow, and custom symptoms you add. It integrates with Apple Health to automatically pull in sleep stages and resting heart rate if you use an Apple Watch.",
+        q: "What does Peri Tracker track?",
+        a: "Peri Tracker logs: hot flashes (with time of day and severity), night sweats, sleep quality, mood, energy, brain fog, menstrual cycle dates and flow, and custom symptoms you add. It integrates with Apple Health to automatically pull in sleep stages and resting heart rate if you use an Apple Watch.",
       },
       {
-        q: "Does PerimenoTracker require an account or internet connection?",
-        a: "No. PerimenoTracker is local-first — all data is stored on your iPhone. No account, no sign-up, no cloud sync. An internet connection is not required after download.",
+        q: "Does Peri Tracker require an account or internet connection?",
+        a: "No. Peri Tracker is local-first — all data is stored on your iPhone. No account, no sign-up, no cloud sync. An internet connection is not required after download.",
       },
       {
-        q: "Can PerimenoTracker export a report for my doctor?",
-        a: "Yes. PerimenoTracker generates a structured PDF report covering your last 1–3 months of symptom data: cycle history, top symptoms by frequency and severity, and trend lines. It is formatted for clinical readability — a gynecologist can review it in under 60 seconds at the start of an appointment.",
+        q: "Can Peri Tracker export a report for my doctor?",
+        a: "Yes. Peri Tracker generates a structured PDF report covering your last 1–3 months of symptom data: cycle history, top symptoms by frequency and severity, and trend lines. It is formatted for clinical readability — a gynecologist can review it in under 60 seconds at the start of an appointment.",
       },
       {
-        q: "Is PerimenoTracker free?",
-        a: "PerimenoTracker offers a free 14-day trial with full access to all features. After the trial, a subscription is required: $2.99/month or $24.99/year.",
+        q: "Is Peri Tracker free?",
+        a: "Peri Tracker offers a free 14-day trial with full access to all features. After the trial, a subscription is required: $2.99/month or $24.99/year.",
       },
       {
-        q: "Is PerimenoTracker available on Android?",
-        a: "Currently, PerimenoTracker is iOS only (iPhone, iOS 16+). Android is not supported at this time.",
+        q: "Is Peri Tracker available on Android?",
+        a: "Currently, Peri Tracker is iOS only (iPhone, iOS 16+). Android is not supported at this time.",
       },
       {
-        q: "How is PerimenoTracker different from Balance or Clue?",
-        a: "PerimenoTracker is built specifically for perimenopause symptom tracking and clinical reporting. Its differentiators are: granular severity ratings for all symptoms, hot flash tracking with time of day, a PDF doctor report export, and local-first data storage. Balance focuses on educational content and community. Clue is a general period tracker with limited perimenopause-specific features.",
+        q: "How is Peri Tracker different from Balance or Clue?",
+        a: "Peri Tracker is built specifically for perimenopause symptom tracking and clinical reporting. Its differentiators are: granular severity ratings for all symptoms, hot flash tracking with time of day, a PDF doctor report export, and local-first data storage. Balance focuses on educational content and community. Clue is a general period tracker with limited perimenopause-specific features.",
       },
     ],
   },
@@ -148,7 +148,7 @@ const landingLinks = [
   {
     href: "/perimenopause-symptom-tracker",
     label: "Perimenopause Symptom Tracker",
-    description: "Full overview of what PerimenoTracker tracks and how it works",
+    description: "Full overview of what Peri Tracker tracks and how it works",
   },
   {
     href: "/hot-flash-tracker",
@@ -173,7 +173,7 @@ const landingLinks = [
   {
     href: "/balance-app-alternative",
     label: "Balance App Alternative",
-    description: "How PerimenoTracker compares to Balance for symptom tracking",
+    description: "How Peri Tracker compares to Balance for symptom tracking",
   },
 ];
 
@@ -195,7 +195,7 @@ export default function FaqPage() {
               Perimenopause Questions & Answers
             </h1>
             <p className="text-sm text-pizarra">
-              Common questions about perimenopause symptoms, tracking, and PerimenoTracker.
+              Common questions about perimenopause symptoms, tracking, and Peri Tracker.
               Sources: NAMS, NIH, Mayo Clinic, SWAN Study.
             </p>
           </header>
@@ -255,7 +255,7 @@ export default function FaqPage() {
           {/* Footer */}
           <footer className="mt-16 border-t border-[rgba(44,40,37,0.12)] pt-8">
             <p className="text-xs text-pizarra">
-              PerimenoTracker is a personal health logging tool and is not a medical device. It
+              Peri Tracker is a personal health logging tool and is not a medical device. It
               does not diagnose, treat, or provide medical advice. Consult a qualified healthcare
               professional for personalized guidance.
             </p>

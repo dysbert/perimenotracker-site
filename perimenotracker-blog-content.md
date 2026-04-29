@@ -1,6 +1,6 @@
-# PerimenoTracker Blog — Contenido y Linking
+# Peri Tracker Blog — Contenido y Linking
 
-**Summary**: Inventario de artículos del blog de PerimenoTracker, arquitectura de clusters SEO/AEO/GEO, y reglas de internal linking para que el contenido esté bien conectado y sin overlap.
+**Summary**: Inventario de artículos del blog de Peri Tracker, arquitectura de clusters SEO/AEO/GEO, y reglas de internal linking para que el contenido esté bien conectado y sin overlap.
 
 **Sources**: análisis conversacional 2026-04-29. Basado en la arquitectura de [[spectro-blog-content]] adaptada al nicho salud/perimenopause.
 
@@ -19,7 +19,7 @@
 | `perimenopause-brain-fog` | Perimenopause Brain Fog: Why It Happens and How Logging Helps | Symptom Deep Dives | Deep dive síntoma — alta intención informacional, diferenciador GEO |
 | `perimenopause-sleep-problems` | Perimenopause and Sleep: Why You Can't Sleep and What to Do | Symptom Deep Dives | Deep dive síntoma — muy buscado, conecta con Apple Health |
 | `doctor-report-perimenopause` | How to Prepare a Symptom Report for Your Gynecologist (With a Template) | Doctor Visit | Integration page — activa el diferenciador PDF; alta intención de conversión |
-| `perimenotracker-vs-balance` | PerimenoTracker vs Balance: Which App Is Better for Perimenopause? | Tool Comparisons | Comparativa directa — intención de compra alta, captura tráfico de Balance |
+| `perimenotracker-vs-balance` | Peri Tracker vs Balance: Which App Is Better for Perimenopause? | Tool Comparisons | Comparativa directa — intención de compra alta, captura tráfico de Balance |
 | `best-perimenopause-apps` | Best Perimenopause Tracker Apps in 2026 (Honest Comparison) | Tool Comparisons | Roundup — captura búsquedas genéricas de app, alta conversión |
 | `apple-health-perimenopause` | Using Apple Health for Perimenopause: What It Tracks (and What It Misses) | Integration Pages | Integration page — captura tráfico de usuarias Apple Health, diferenciador local-first |
 
@@ -55,7 +55,7 @@
 4. **`what-is-perimenopause` NO es redundante con `perimenopause-vs-menopause`**: el pilar define el concepto completo (timeline, qué esperar, qué trackear); el artículo de comparación responde una pregunta específica de diagnóstico diferencial. Debe enlazar al pilar como "para una guía completa" desde su intro o conclusión.
 5. **No crear nuevo artículo sobre síntomas de perimenopausia** sin diferenciarlo claramente del pilar y enlazarlo.
 6. **Artículos de Tool Comparisons** (`perimenotracker-vs-balance`, `best-perimenopause-apps`) deben siempre enlazar al cluster Core (mínimo a `how-to-track-perimenopause-symptoms` o `what-is-perimenopause`).
-7. **No escribir comparativas vs competidores** a menos que PerimenoTracker gane claramente en las dimensiones que importan (PDF médico, local-first, especialización en perimenopause). Aplicar la misma lógica que Spectro: si el competidor gana en dimensiones clave para el usuario, esperar a tener más diferenciadores antes de publicar esa comparativa.
+7. **No escribir comparativas vs competidores** a menos que Peri Tracker gane claramente en las dimensiones que importan (PDF médico, local-first, especialización en perimenopause). Aplicar la misma lógica que Spectro: si el competidor gana en dimensiones clave para el usuario, esperar a tener más diferenciadores antes de publicar esa comparativa.
 8. **El diferenciador PDF médico** debe aparecer mencionado (no necesariamente como tema principal) en al menos: `doctor-report-perimenopause`, `how-to-track-perimenopause-symptoms`, y los artículos de Tool Comparisons.
 
 ---
@@ -80,7 +80,7 @@ Todo artículo nuevo debe incluir desde el día de publicación:
 
 **1. JSON-LD FAQPage** — 2-3 preguntas y respuestas directas relacionadas con el artículo. Insertar en el `<head>` de la página o en el componente de layout del blog. Las preguntas deben responder literalmente lo que alguien preguntaría a ChatGPT, Perplexity o un LLM médico sobre el tema.
 
-**2. Actualizar llms.txt** — añadir el slug del artículo nuevo a `perimenotracker.app/llms.txt` (o el dominio final). Una línea por artículo con título y URL.
+**2. Actualizar llms.txt** — añadir el slug del artículo nuevo a `peritracker.app/llms.txt` (o el dominio final). Una línea por artículo con título y URL.
 
 Jerarquía en `llms.txt`:
 
@@ -113,8 +113,8 @@ Jerarquía en `llms.txt`:
 - "How can a symptom tracker help my doctor?"
 
 **Ejemplos para `perimenotracker-vs-balance`:**
-- "Is PerimenoTracker better than Balance for perimenopause?"
-- "What's the difference between PerimenoTracker and Balance?"
+- "Is Peri Tracker better than Balance for perimenopause?"
+- "What's the difference between Peri Tracker and Balance?"
 - "Does Balance app work for perimenopause?"
 
 ---
@@ -202,7 +202,7 @@ apple-health-perimenopause:
 
 ## Notas YMYL — diferencias con Spectro
 
-A diferencia de Spectro (herramienta técnica para DJs), PerimenoTracker opera en salud, categoría **YMYL** (Your Money or Your Life). Esto impacta directamente la estrategia SEO:
+A diferencia de Spectro (herramienta técnica para DJs), Peri Tracker opera en salud, categoría **YMYL** (Your Money or Your Life). Esto impacta directamente la estrategia SEO:
 
 - **E-E-A-T es crítico.** Google evalúa Expertise, Experience, Authoritativeness, Trustworthiness. El blog debe tener una página "About" que establezca credenciales (quién escribe, revisión médica si es posible).
 - **Citas de fuentes primarias** en cada artículo (NAMS, NIH, Mayo Clinic, estudios PMC). No basta con "según expertos".

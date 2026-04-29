@@ -5,7 +5,7 @@ import Nav from "../components/Nav";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://getperi.app"),
+  metadataBase: new URL("https://peritracker.app"),
   title: "peri — Perimenopause Symptom Tracker for iOS",
   description:
     "Track hot flashes, fatigue, sleep issues and more. See patterns, share a structured PDF with your doctor. Free 14-day trial · $2.99/mo.",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "peri — Perimenopause Symptom Tracker",
     description:
       "Track symptoms. See patterns. Share data your doctor can actually use.",
-    url: "https://getperi.app",
+    url: "https://peritracker.app",
     siteName: "peri",
     locale: "en_US",
     type: "website",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon.svg",
     apple: "/apple-touch-icon.png"
   },
-  alternates: { canonical: "https://getperi.app" },
+  alternates: { canonical: "https://peritracker.app" },
   robots: { index: true, follow: true }
 };
 

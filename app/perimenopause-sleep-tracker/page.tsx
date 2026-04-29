@@ -4,7 +4,7 @@ import { SeoLandingPage } from "../../components/SeoLandingPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Perimenopause Sleep Tracker — PerimenoTracker",
+  title: "Perimenopause Sleep Tracker — Peri Tracker",
   description:
     "Track sleep disruption during perimenopause. Log night sweats, sleep quality, and morning energy. See how sleep connects to your other symptoms.",
   keywords: [
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "track sleep perimenopause iphone",
   ],
   alternates: {
-    canonical: "https://perimenotracker.app/perimenopause-sleep-tracker",
+    canonical: "https://peritracker.app/perimenopause-sleep-tracker",
   },
 };
 
@@ -25,7 +25,7 @@ export default function PerimenopauseSleepTrackerPage() {
       eyebrow="Perimenopause Sleep Tracker"
       title="Perimenopause Sleep Tracker — Understand Why You Can't Sleep"
       subtitle="Log sleep quality, night sweats, and morning energy. See how your sleep connects to hot flashes, mood, and your cycle. Bring the pattern to your doctor."
-      quickAnswer="PerimenoTracker logs nightly sleep quality alongside night sweats, morning energy, and other perimenopause symptoms. When combined with Apple Health sleep data (if you use an Apple Watch), you get both subjective and objective sleep tracking in one place — and a PDF export your doctor can use."
+      quickAnswer="Peri Tracker logs nightly sleep quality alongside night sweats, morning energy, and other perimenopause symptoms. When combined with Apple Health sleep data (if you use an Apple Watch), you get both subjective and objective sleep tracking in one place — and a PDF export your doctor can use."
       audienceBullets={[
         "Women in perimenopause experiencing sleep disruption or insomnia",
         "Anyone waking from night sweats and wanting to understand the pattern",
@@ -41,7 +41,7 @@ export default function PerimenopauseSleepTrackerPage() {
         "Cycle-phase overlay: identify whether sleep is worse at specific points in your cycle",
       ]}
       howToSteps={[
-        "Download PerimenoTracker — no account required",
+        "Download Peri Tracker — no account required",
         "Each morning, rate your sleep quality and note any night sweats (30 seconds)",
         "Apple Health automatically contributes sleep stage data if you wear Apple Watch",
         "After 3–4 weeks, open Trends to see your sleep patterns",
@@ -58,11 +58,11 @@ export default function PerimenopauseSleepTrackerPage() {
         },
         {
           q: "Should I track sleep separately from other perimenopause symptoms?",
-          a: "No — tracking sleep alongside other symptoms is more valuable than tracking it in isolation. PerimenoTracker shows how your sleep quality correlates with night sweat frequency, mood the following day, and cycle phase, which is more useful information than sleep data alone.",
+          a: "No — tracking sleep alongside other symptoms is more valuable than tracking it in isolation. Peri Tracker shows how your sleep quality correlates with night sweat frequency, mood the following day, and cycle phase, which is more useful information than sleep data alone.",
         },
         {
-          q: "Does PerimenoTracker work with Apple Health sleep data?",
-          a: "Yes. If you wear an Apple Watch, PerimenoTracker reads sleep stage data from Apple Health and displays it alongside your manually logged sleep quality score. This combines subjective (how you felt) with objective (measured sleep stages) data in one view.",
+          q: "Does Peri Tracker work with Apple Health sleep data?",
+          a: "Yes. If you wear an Apple Watch, Peri Tracker reads sleep stage data from Apple Health and displays it alongside your manually logged sleep quality score. This combines subjective (how you felt) with objective (measured sleep stages) data in one view.",
         },
       ]}
       relatedLinks={[
@@ -71,7 +71,7 @@ export default function PerimenopauseSleepTrackerPage() {
         { href: "/apple-health-perimenopause", label: "Apple Health Integration" },
         { href: "/doctor-visit-prep", label: "Doctor Visit Prep", description: "Export a structured PDF symptom report for your gynecologist" },
       ]}
-      legalNote="PerimenoTracker is a personal health logging tool and is not a medical device. It does not diagnose, treat, or provide medical advice. Consult a qualified healthcare professional for medical guidance."
+      legalNote="Peri Tracker is a personal health logging tool and is not a medical device. It does not diagnose, treat, or provide medical advice. Consult a qualified healthcare professional for medical guidance."
     />
   );
 }

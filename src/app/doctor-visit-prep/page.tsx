@@ -4,7 +4,7 @@ import { SeoLandingPage } from "@/components/SeoLandingPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Perimenopause Doctor Visit Prep — Symptom Report PDF — PerimenoTracker",
+  title: "Perimenopause Doctor Visit Prep — Symptom Report PDF — Peri Tracker",
   description:
     "Export a structured perimenopause symptom report for your gynecologist. Cycle history, hot flash frequency, severity trends — ready to hand over at your appointment.",
   keywords: [
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "what to bring to gynecologist perimenopause",
   ],
   alternates: {
-    canonical: "https://perimenotracker.app/doctor-visit-prep",
+    canonical: "https://peritracker.app/doctor-visit-prep",
   },
 };
 
@@ -25,7 +25,7 @@ export default function DoctorVisitPrepPage() {
       eyebrow="Doctor Visit Prep"
       title="Perimenopause Doctor Visit Prep — Export Your Symptom Report as PDF"
       subtitle="Turn 30–90 days of tracked symptoms into a one-page PDF your gynecologist can read in 60 seconds. No preparation required — the report generates automatically."
-      quickAnswer="PerimenoTracker exports a structured PDF report covering your last 1–3 months of symptom data: cycle history, hot flash frequency and severity, sleep quality trends, mood patterns, and top symptoms ranked by impact. It is formatted for clinical use — your doctor can review it at the start of the appointment without any verbal setup."
+      quickAnswer="Peri Tracker exports a structured PDF report covering your last 1–3 months of symptom data: cycle history, hot flash frequency and severity, sleep quality trends, mood patterns, and top symptoms ranked by impact. It is formatted for clinical use — your doctor can review it at the start of the appointment without any verbal setup."
       audienceBullets={[
         "Women preparing for a perimenopause or menopause-related doctor appointment",
         "Anyone who has struggled to explain their symptoms clearly at appointments",
@@ -41,7 +41,7 @@ export default function DoctorVisitPrepPage() {
         "Formatted for clinical readability — a doctor can scan it in under 60 seconds",
       ]}
       howToSteps={[
-        "Download PerimenoTracker and log symptoms daily for at least 2–3 weeks before your appointment",
+        "Download Peri Tracker and log symptoms daily for at least 2–3 weeks before your appointment",
         "A few days before the appointment, tap 'Export Report' in the app",
         "Choose your reporting period (30, 60, or 90 days)",
         "The PDF generates automatically — save it to Files or share directly",
@@ -61,7 +61,7 @@ export default function DoctorVisitPrepPage() {
           a: "Perimenopause is diagnosed based on symptoms and history, not a single test. The quality of symptom data your doctor receives directly affects the accuracy of their assessment and the appropriateness of treatment recommendations. Structured data over months is significantly more useful than a verbal summary of recent weeks.",
         },
         {
-          q: "Does PerimenoTracker's doctor report work for any doctor, or only gynecologists?",
+          q: "Does Peri Tracker's doctor report work for any doctor, or only gynecologists?",
           a: "The report is useful for any healthcare provider managing perimenopause symptoms — gynecologists, GPs, internists, or menopause specialists. It is formatted as a general clinical summary, not specific to any specialty.",
         },
       ]}
@@ -71,7 +71,7 @@ export default function DoctorVisitPrepPage() {
         { href: "/blog/doctor-report-perimenopause", label: "How to Prepare a Symptom Report for Your Gynecologist" },
         { href: "/blog/how-to-track-perimenopause-symptoms", label: "How to Track Perimenopause Symptoms" },
       ]}
-      legalNote="PerimenoTracker is a personal health logging tool and is not a medical device. The symptom report it generates is a personal health summary, not a medical record or clinical document. Consult a qualified healthcare professional for medical guidance."
+      legalNote="Peri Tracker is a personal health logging tool and is not a medical device. The symptom report it generates is a personal health summary, not a medical record or clinical document. Consult a qualified healthcare professional for medical guidance."
     />
   );
 }
