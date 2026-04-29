@@ -426,6 +426,59 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Tools & Resources */}
+      <section className="bg-creta px-5 pb-20 md:px-12 md:pb-[100px]">
+        <div className="mx-auto max-w-[1100px]">
+          <h2 className="text-lg font-semibold text-umbra mb-6">Tools & Resources</h2>
+          <div className="grid gap-3">
+            {[
+              {
+                href: "/perimenopause-symptom-tracker",
+                label: "Perimenopause Symptom Tracker",
+                description: "Full overview of what PerimenoTracker tracks and how it works"
+              },
+              {
+                href: "/hot-flash-tracker",
+                label: "Hot Flash Tracker",
+                description: "Log frequency, severity, and time of day - identify your triggers"
+              },
+              {
+                href: "/perimenopause-sleep-tracker",
+                label: "Perimenopause Sleep Tracker",
+                description: "Track night sweats, sleep quality, and morning energy"
+              },
+              {
+                href: "/doctor-visit-prep",
+                label: "Doctor Visit Prep",
+                description: "Export a PDF symptom report for your gynecologist"
+              },
+              {
+                href: "/apple-health-perimenopause",
+                label: "Apple Health Integration",
+                description: "Automatic sleep and heart rate data from Apple Watch"
+              },
+              {
+                href: "/balance-app-alternative",
+                label: "Balance App Alternative",
+                description: "How PerimenoTracker compares to Balance for symptom tracking"
+              }
+            ].map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="rounded-2xl border border-[#2A2A2A] bg-[#111] px-5 py-4 flex justify-between items-center group hover:border-[#444] transition-colors"
+              >
+                <div>
+                  <p className="text-white font-medium text-sm group-hover:underline">{link.label}</p>
+                  <p className="text-[#666] text-xs mt-0.5">{link.description}</p>
+                </div>
+                <span className="text-[#555] shrink-0 ml-4">→</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="relative overflow-hidden bg-umbra px-5 py-20 text-center md:px-12 md:py-[120px]">
         <div className="pointer-events-none absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-siena opacity-[0.07] blur-[120px]" />
 

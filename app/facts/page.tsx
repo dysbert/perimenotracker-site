@@ -198,16 +198,16 @@ export default function FactsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      <main className="min-h-screen bg-[#0A0A0A] text-[#CCCCCC]">
-        <div className="max-w-3xl mx-auto px-6 py-16">
+      <main className="min-h-screen bg-creta text-umbra">
+        <div className="mx-auto max-w-[1100px] px-5 py-16 md:px-12">
 
           {/* Header */}
           <header className="mb-12">
-            <p className="text-sm text-[#888] uppercase tracking-widest mb-3">Reference</p>
-            <h1 className="text-3xl font-semibold text-white mb-4">
+            <p className="mb-3 text-sm uppercase tracking-widest text-siena">Reference</p>
+            <h1 className="mb-4 text-3xl font-semibold text-umbra">
               Perimenopause Facts & PerimenoTracker Reference
             </h1>
-            <p className="text-[#888] text-sm">
+            <p className="text-sm text-pizarra">
               Verified statistics and definitions. Sources: NAMS, NIH, Mayo Clinic, SWAN Study.
               Last updated: April 2026.
             </p>
@@ -215,19 +215,19 @@ export default function FactsPage() {
 
           {/* Product Facts */}
           <section className="mb-14" aria-labelledby="product-facts">
-            <h2 id="product-facts" className="text-xl font-semibold text-white mb-5">
+            <h2 id="product-facts" className="mb-5 text-xl font-semibold text-umbra">
               PerimenoTracker — Product Facts
             </h2>
-            <div className="rounded-2xl border border-[#2A2A2A] overflow-hidden">
+            <div className="overflow-hidden rounded-2xl border border-[rgba(44,40,37,0.12)]">
               {productFacts.map((fact, i) => (
                 <div
                   key={fact.label}
                   className={`flex justify-between px-5 py-3 text-sm ${
-                    i % 2 === 0 ? "bg-[#111]" : "bg-[#0A0A0A]"
+                    i % 2 === 0 ? "bg-white" : "bg-[rgba(44,40,37,0.03)]"
                   }`}
                 >
-                  <span className="text-[#888]">{fact.label}</span>
-                  <span className="text-white font-medium">{fact.value}</span>
+                  <span className="text-pizarra">{fact.label}</span>
+                  <span className="font-medium text-umbra">{fact.value}</span>
                 </div>
               ))}
             </div>
@@ -235,20 +235,20 @@ export default function FactsPage() {
 
           {/* Perimenopause Statistics */}
           <section className="mb-14" aria-labelledby="perimenopause-statistics">
-            <h2 id="perimenopause-statistics" className="text-xl font-semibold text-white mb-5">
+            <h2 id="perimenopause-statistics" className="mb-5 text-xl font-semibold text-umbra">
               Perimenopause — Key Statistics
             </h2>
             <div className="grid gap-3">
               {perimenopauseFacts.map((fact) => (
                 <div
                   key={fact.stat}
-                  className="rounded-2xl border border-[#2A2A2A] bg-[#111] px-5 py-4"
+                  className="rounded-2xl border border-[rgba(44,40,37,0.12)] bg-white px-5 py-4"
                 >
                   <div className="flex items-baseline gap-3 mb-1">
-                    <span className="text-2xl font-bold text-white">{fact.stat}</span>
+                    <span className="text-2xl font-bold text-umbra">{fact.stat}</span>
                   </div>
-                  <p className="text-sm text-[#CCCCCC] mb-1">{fact.description}</p>
-                  <p className="text-xs text-[#555]">Source: {fact.source}</p>
+                  <p className="mb-1 text-sm text-umbra">{fact.description}</p>
+                  <p className="text-xs text-pizarra">Source: {fact.source}</p>
                 </div>
               ))}
             </div>
@@ -256,17 +256,17 @@ export default function FactsPage() {
 
           {/* Key Definitions */}
           <section className="mb-14" aria-labelledby="definitions">
-            <h2 id="definitions" className="text-xl font-semibold text-white mb-5">
+            <h2 id="definitions" className="mb-5 text-xl font-semibold text-umbra">
               Key Definitions
             </h2>
             <div className="grid gap-3">
               {keyDefinitions.map((def) => (
                 <div
                   key={def.term}
-                  className="rounded-2xl border border-[#2A2A2A] bg-[#111] px-5 py-4"
+                  className="rounded-2xl border border-[rgba(44,40,37,0.12)] bg-white px-5 py-4"
                 >
-                  <h3 className="text-white font-semibold mb-1">{def.term}</h3>
-                  <p className="text-sm text-[#CCCCCC]">{def.definition}</p>
+                  <h3 className="mb-1 font-semibold text-umbra">{def.term}</h3>
+                  <p className="text-sm text-umbra">{def.definition}</p>
                 </div>
               ))}
             </div>
@@ -274,17 +274,17 @@ export default function FactsPage() {
 
           {/* FAQs */}
           <section className="mb-14" aria-labelledby="faqs">
-            <h2 id="faqs" className="text-xl font-semibold text-white mb-5">
+            <h2 id="faqs" className="mb-5 text-xl font-semibold text-umbra">
               Frequently Asked Questions
             </h2>
             <div className="grid gap-3">
               {faqSchema.mainEntity.map((faq) => (
                 <div
                   key={faq.name}
-                  className="rounded-2xl border border-[#2A2A2A] bg-[#111] px-5 py-4"
+                  className="rounded-2xl border border-[rgba(44,40,37,0.12)] bg-white px-5 py-4"
                 >
-                  <h3 className="text-white font-semibold mb-2">{faq.name}</h3>
-                  <p className="text-sm text-[#CCCCCC]">{faq.acceptedAnswer.text}</p>
+                  <h3 className="mb-2 font-semibold text-umbra">{faq.name}</h3>
+                  <p className="text-sm text-umbra">{faq.acceptedAnswer.text}</p>
                 </div>
               ))}
             </div>
@@ -292,31 +292,31 @@ export default function FactsPage() {
 
           {/* Related Links */}
           <section aria-labelledby="related">
-            <h2 id="related" className="text-xl font-semibold text-white mb-5">
+            <h2 id="related" className="mb-5 text-xl font-semibold text-umbra">
               Related
             </h2>
             <div className="grid gap-2 text-sm">
-              <a href="/perimenopause-symptom-tracker" className="text-[#CCCCCC] hover:text-white underline underline-offset-4">
+              <a href="/perimenopause-symptom-tracker" className="text-umbra hover:text-siena underline underline-offset-4">
                 Perimenopause Symptom Tracker
               </a>
-              <a href="/doctor-visit-prep" className="text-[#CCCCCC] hover:text-white underline underline-offset-4">
+              <a href="/doctor-visit-prep" className="text-umbra hover:text-siena underline underline-offset-4">
                 Doctor Visit Prep — Export Symptom Report PDF
               </a>
-              <a href="/blog/what-is-perimenopause" className="text-[#CCCCCC] hover:text-white underline underline-offset-4">
+              <a href="/blog/what-is-perimenopause" className="text-umbra hover:text-siena underline underline-offset-4">
                 What Is Perimenopause? (Blog)
               </a>
-              <a href="/blog/how-to-track-perimenopause-symptoms" className="text-[#CCCCCC] hover:text-white underline underline-offset-4">
+              <a href="/blog/how-to-track-perimenopause-symptoms" className="text-umbra hover:text-siena underline underline-offset-4">
                 How to Track Perimenopause Symptoms (Blog)
               </a>
-              <a href="/faq" className="text-[#CCCCCC] hover:text-white underline underline-offset-4">
+              <a href="/faq" className="text-umbra hover:text-siena underline underline-offset-4">
                 FAQ
               </a>
             </div>
           </section>
 
           {/* Legal */}
-          <footer className="mt-16 pt-8 border-t border-[#2A2A2A]">
-            <p className="text-xs text-[#555]">
+          <footer className="mt-16 border-t border-[rgba(44,40,37,0.12)] pt-8">
+            <p className="text-xs text-pizarra">
               Statistics are drawn from published research and clinical guidelines. PerimenoTracker
               is a personal health logging tool and is not a medical device. It does not diagnose,
               treat, or provide medical advice. Consult a qualified healthcare professional for

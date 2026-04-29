@@ -33,6 +33,8 @@ export const metadata: Metadata = {
     images: ["/og-image.png"]
   },
   icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
     apple: "/apple-touch-icon.png"
   },
   alternates: { canonical: "https://getperi.app" },

@@ -23,12 +23,6 @@ export default function Nav() {
             Pricing
           </Link>
           <Link
-            href="/privacy"
-            className="text-[12px] font-medium uppercase tracking-[0.04em] text-pizarra transition-colors hover:text-siena"
-          >
-            Privacy
-          </Link>
-          <Link
             href="/blog"
             className="text-[12px] font-medium uppercase tracking-[0.04em] text-pizarra transition-colors hover:text-siena"
           >

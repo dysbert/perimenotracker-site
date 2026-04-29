@@ -185,16 +185,16 @@ export default function FaqPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      <main className="min-h-screen bg-[#0A0A0A] text-[#CCCCCC]">
-        <div className="max-w-3xl mx-auto px-6 py-16">
+      <main className="min-h-screen bg-creta text-umbra">
+        <div className="mx-auto max-w-[1100px] px-5 py-16 md:px-12">
 
           {/* Header */}
           <header className="mb-12">
-            <p className="text-sm text-[#888] uppercase tracking-widest mb-3">FAQ</p>
-            <h1 className="text-3xl font-semibold text-white mb-4">
+            <p className="mb-3 text-sm uppercase tracking-widest text-siena">FAQ</p>
+            <h1 className="mb-4 text-3xl font-semibold text-umbra">
               Perimenopause Questions & Answers
             </h1>
-            <p className="text-[#888] text-sm">
+            <p className="text-sm text-pizarra">
               Common questions about perimenopause symptoms, tracking, and PerimenoTracker.
               Sources: NAMS, NIH, Mayo Clinic, SWAN Study.
             </p>
@@ -203,22 +203,22 @@ export default function FaqPage() {
           {/* FAQ sections */}
           {faqs.map((section) => (
             <section key={section.category} className="mb-12">
-              <h2 className="text-lg font-semibold text-white mb-4 pb-2 border-b border-[#2A2A2A]">
+              <h2 className="mb-4 border-b border-[rgba(44,40,37,0.12)] pb-2 text-lg font-semibold text-umbra">
                 {section.category}
               </h2>
               <div className="grid gap-3">
                 {section.items.map((item) => (
                   <details
                     key={item.q}
-                    className="rounded-2xl border border-[#2A2A2A] bg-[#111] px-5 py-4 group"
+                    className="group rounded-2xl border border-[rgba(44,40,37,0.12)] bg-white px-5 py-4"
                   >
-                    <summary className="cursor-pointer text-white font-medium text-sm list-none flex justify-between items-center gap-4">
+                    <summary className="flex list-none cursor-pointer items-center justify-between gap-4 text-sm font-medium text-umbra">
                       {item.q}
-                      <span className="text-[#555] group-open:rotate-180 transition-transform shrink-0">
+                      <span className="shrink-0 text-pizarra transition-transform group-open:rotate-180">
                         ↓
                       </span>
                     </summary>
-                    <p className="mt-3 text-sm text-[#CCCCCC] leading-relaxed">{item.a}</p>
+                    <p className="mt-3 text-sm leading-relaxed text-umbra">{item.a}</p>
                   </details>
                 ))}
               </div>
@@ -229,7 +229,7 @@ export default function FaqPage() {
           <section className="mt-14" aria-labelledby="tools-heading">
             <h2
               id="tools-heading"
-              className="text-lg font-semibold text-white mb-4 pb-2 border-b border-[#2A2A2A]"
+              className="mb-4 border-b border-[rgba(44,40,37,0.12)] pb-2 text-lg font-semibold text-umbra"
             >
               Tools & Resources
             </h2>
@@ -238,23 +238,23 @@ export default function FaqPage() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="rounded-2xl border border-[#2A2A2A] bg-[#111] px-5 py-4 flex justify-between items-center group hover:border-[#444] transition-colors"
+                  className="group flex items-center justify-between rounded-2xl border border-[rgba(44,40,37,0.12)] bg-white px-5 py-4 transition-colors hover:border-siena"
                 >
                   <div>
-                    <p className="text-white font-medium text-sm group-hover:underline">
+                    <p className="text-sm font-medium text-umbra group-hover:underline">
                       {link.label}
                     </p>
-                    <p className="text-[#666] text-xs mt-0.5">{link.description}</p>
+                    <p className="mt-0.5 text-xs text-pizarra">{link.description}</p>
                   </div>
-                  <span className="text-[#555] shrink-0 ml-4">→</span>
+                  <span className="ml-4 shrink-0 text-pizarra">→</span>
                 </a>
               ))}
             </div>
           </section>
 
           {/* Footer */}
-          <footer className="mt-16 pt-8 border-t border-[#2A2A2A]">
-            <p className="text-xs text-[#555]">
+          <footer className="mt-16 border-t border-[rgba(44,40,37,0.12)] pt-8">
+            <p className="text-xs text-pizarra">
               PerimenoTracker is a personal health logging tool and is not a medical device. It
               does not diagnose, treat, or provide medical advice. Consult a qualified healthcare
               professional for personalized guidance.
