@@ -68,8 +68,8 @@ export default function DoctorVisitPrepPage() {
       relatedLinks={[
         { href: "/perimenopause-symptom-tracker", label: "Full Symptom Tracker" },
         { href: "/hot-flash-tracker", label: "Hot Flash Tracker" },
-        { href: "/blog/doctor-report-perimenopause", label: "How to Prepare a Symptom Report for Your Gynecologist" },
-        { href: "/blog/how-to-track-perimenopause-symptoms", label: "How to Track Perimenopause Symptoms" },
+        { href: "/perimenopause-sleep-tracker", label: "Sleep Tracker", description: "Track night sweats and sleep quality alongside your other symptoms" },
+        { href: "/apple-health-perimenopause", label: "Apple Health Integration", description: "Auto-import sleep and heart rate data from Apple Watch" },
       ]}
       legalNote="PerimenoTracker is a personal health logging tool and is not a medical device. The symptom report it generates is a personal health summary, not a medical record or clinical document. Consult a qualified healthcare professional for medical guidance."
     />

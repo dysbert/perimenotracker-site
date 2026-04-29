@@ -70,7 +70,7 @@ export default function HotFlashTrackerPage() {
         { href: "/perimenopause-symptom-tracker", label: "Full Symptom Tracker" },
         { href: "/perimenopause-sleep-tracker", label: "Sleep Tracker" },
         { href: "/doctor-visit-prep", label: "Doctor Visit Prep" },
-        { href: "/blog/perimenopause-hot-flashes", label: "What Causes Hot Flashes?" },
+        { href: "/balance-app-alternative", label: "Balance App Alternative", description: "Compare PerimenoTracker to other perimenopause apps" },
       ]}
       legalNote="PerimenoTracker is a personal health logging tool and is not a medical device. It does not diagnose, treat, or provide medical advice. Consult a qualified healthcare professional for medical guidance."
     />

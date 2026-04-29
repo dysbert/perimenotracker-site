@@ -69,7 +69,7 @@ export default function PerimenopauseSleepTrackerPage() {
         { href: "/perimenopause-symptom-tracker", label: "Full Symptom Tracker" },
         { href: "/hot-flash-tracker", label: "Hot Flash Tracker" },
         { href: "/apple-health-perimenopause", label: "Apple Health Integration" },
-        { href: "/blog/perimenopause-sleep-problems", label: "Why Perimenopause Disrupts Sleep" },
+        { href: "/doctor-visit-prep", label: "Doctor Visit Prep", description: "Export a structured PDF symptom report for your gynecologist" },
       ]}
       legalNote="PerimenoTracker is a personal health logging tool and is not a medical device. It does not diagnose, treat, or provide medical advice. Consult a qualified healthcare professional for medical guidance."
     />

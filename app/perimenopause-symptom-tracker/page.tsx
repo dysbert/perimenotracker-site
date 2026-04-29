@@ -73,8 +73,8 @@ export default function PerimenopauseSymptomTrackerPage() {
         { href: "/hot-flash-tracker", label: "Hot Flash Tracker" },
         { href: "/doctor-visit-prep", label: "Doctor Visit Prep" },
         { href: "/apple-health-perimenopause", label: "Apple Health Integration" },
-        { href: "/blog/what-is-perimenopause", label: "What Is Perimenopause?" },
-        { href: "/blog/how-to-track-perimenopause-symptoms", label: "How to Track Perimenopause Symptoms" },
+        { href: "/perimenopause-sleep-tracker", label: "Sleep Tracker", description: "Track night sweats, sleep quality, and morning energy" },
+        { href: "/balance-app-alternative", label: "Balance App Alternative", description: "Compare PerimenoTracker to Balance and other apps" },
       ]}
       legalNote="PerimenoTracker is a personal health logging tool and is not a medical device. It does not diagnose, treat, or provide medical advice. Consult a qualified healthcare professional for medical guidance."
     />

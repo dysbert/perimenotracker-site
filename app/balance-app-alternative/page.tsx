@@ -68,8 +68,8 @@ export default function BalanceAppAlternativePage() {
       relatedLinks={[
         { href: "/perimenopause-symptom-tracker", label: "Full Symptom Tracker" },
         { href: "/doctor-visit-prep", label: "Doctor Visit Prep" },
-        { href: "/blog/perimenotracker-vs-balance", label: "PerimenoTracker vs Balance: Full Comparison" },
-        { href: "/blog/best-perimenopause-apps", label: "Best Perimenopause Apps in 2026" },
+        { href: "/hot-flash-tracker", label: "Hot Flash Tracker", description: "Track hot flash frequency, severity, and time of day" },
+        { href: "/apple-health-perimenopause", label: "Apple Health Integration", description: "Auto-import sleep and heart rate data from Apple Watch" },
       ]}
       legalNote="PerimenoTracker is a personal health logging tool and is not a medical device. It does not diagnose, treat, or provide medical advice. Consult a qualified healthcare professional for medical guidance."
     />

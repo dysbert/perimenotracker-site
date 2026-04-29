@@ -302,11 +302,11 @@ export default function FactsPage() {
               <a href="/doctor-visit-prep" className="text-umbra hover:text-siena underline underline-offset-4">
                 Doctor Visit Prep — Export Symptom Report PDF
               </a>
-              <a href="/blog/what-is-perimenopause" className="text-umbra hover:text-siena underline underline-offset-4">
-                What Is Perimenopause? (Blog)
+              <a href="/hot-flash-tracker" className="text-umbra hover:text-siena underline underline-offset-4">
+                Hot Flash Tracker
               </a>
-              <a href="/blog/how-to-track-perimenopause-symptoms" className="text-umbra hover:text-siena underline underline-offset-4">
-                How to Track Perimenopause Symptoms (Blog)
+              <a href="/balance-app-alternative" className="text-umbra hover:text-siena underline underline-offset-4">
+                Balance App Alternative
               </a>
               <a href="/faq" className="text-umbra hover:text-siena underline underline-offset-4">
                 FAQ
