@@ -37,7 +37,7 @@ export default function Nav() {
         </div>
 
         <a
-          href="https://apps.apple.com"
+          href="https://apps.apple.com/es/app/peri-perimenopause-tracker/id6762806616"
           target="_blank"
           rel="noreferrer"
           className="hidden h-9 items-center rounded-full bg-siena px-4 py-1.5 text-[13px] font-medium text-creta md:inline-flex"

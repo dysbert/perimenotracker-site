@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://getperi.app"),
   title: "peri — Perimenopause Symptom Tracker for iOS",
   description:
-    "Track hot flashes, fatigue, sleep issues and more. See patterns, share a structured PDF with your doctor. Free 14-day trial · $6.99/mo.",
+    "Track hot flashes, fatigue, sleep issues and more. See patterns, share a structured PDF with your doctor. Free 14-day trial · $2.99/mo.",
   keywords: [
     "perimenopause tracker",
     "menopause symptom app",
@@ -48,13 +48,13 @@ const jsonLd = {
   offers: [
     {
       "@type": "Offer",
-      price: "6.99",
+      price: "2.99",
       priceCurrency: "USD",
       billingIncrement: "P1M"
     },
     {
       "@type": "Offer",
-      price: "49.99",
+      price: "24.99",
       priceCurrency: "USD",
       billingIncrement: "P1Y"
     }

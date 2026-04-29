@@ -9,9 +9,18 @@ export default function Footer() {
           <p className="mt-1 text-[12px] text-pizarra">Perimenopause, finally legible.</p>
         </div>
         <div className="flex flex-wrap gap-6 text-[12px] text-pizarra">
-          <a href="https://apps.apple.com" className="transition-colors hover:text-creta">
+          <a
+            href="https://apps.apple.com/es/app/peri-perimenopause-tracker/id6762806616"
+            className="transition-colors hover:text-creta"
+          >
             App Store
           </a>
+          <Link href="/faq" className="transition-colors hover:text-creta">
+            FAQ
+          </Link>
+          <Link href="/facts" className="transition-colors hover:text-creta">
+            Facts
+          </Link>
           <Link href="/privacy" className="transition-colors hover:text-creta">
             Privacy Policy
           </Link>

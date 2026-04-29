@@ -71,7 +71,7 @@ const features = [
   },
   {
     title: "14-day free trial",
-    body: "Try everything free for two weeks. Then $6.99/month or $49.99/year - less than a coffee a month.",
+    body: "Try everything free for two weeks. Then $2.99/month or $24.99/year - less than a coffee a month.",
     icon: <StarIcon />
   }
 ];
@@ -99,24 +99,28 @@ const testimonials = [
 
 const faqs = [
   {
-    q: "Is peri free to download?",
-    a: "Yes. Download is free and you get a full 14-day trial. No credit card needed - just download and start tracking."
+    q: "What is perimenopause?",
+    a: "Perimenopause is the hormonal transition before menopause, during which estrogen and progesterone levels gradually decline. It typically begins in the mid-to-late 40s, lasts an average of 4 years, and causes symptoms including hot flashes, irregular periods, sleep disruption, mood changes, and brain fog."
   },
   {
-    q: "What symptoms can I track?",
-    a: "Over 20 symptoms across 5 categories: Vasomotor (hot flashes, night sweats), Mood & Sleep (anxiety, insomnia), Physical (fatigue, headache, joint pain), Cognitive (brain fog, memory), and Reproductive (irregular periods, spotting)."
+    q: "What are the symptoms of perimenopause?",
+    a: "The most common symptoms are irregular periods, hot flashes, night sweats, sleep disturbances, mood changes, brain fog, vaginal dryness, and low energy. About 80% of women experience hot flashes during the transition. Symptoms vary widely in type, frequency, and severity."
   },
   {
-    q: "Where is my data stored?",
-    a: "Entirely on your device. peri does not require an account and does not upload your health data to any server."
+    q: "How is perimenopause different from menopause?",
+    a: "Perimenopause is the transition phase — the years of hormonal fluctuation and changing symptoms. Menopause is a single moment: the day that marks 12 consecutive months without a period. Most symptoms occur during perimenopause, not after."
   },
   {
-    q: "How does the doctor report work?",
-    a: "Go to 'Export for Doctor', choose a date range (last week, month, 3 months, or custom), and generate a clean PDF. It includes a symptom table with dates, intensities, and a summary - formatted for a clinical context."
+    q: "Should I track my perimenopause symptoms?",
+    a: "Yes. Perimenopause is diagnosed based on symptoms and history, not a single test. Consistent tracking gives your doctor the data needed to make accurate assessments and better treatment decisions — far more useful than a verbal summary from memory."
   },
   {
-    q: "Can I cancel my subscription?",
-    a: "Yes, at any time through your Apple ID settings. You keep access until the end of your billing period."
+    q: "Can PerimenoTracker help at a doctor appointment?",
+    a: "Yes. PerimenoTracker exports a structured PDF report covering your last 1–3 months of symptom data — cycle history, hot flash frequency, severity trends — formatted for your gynecologist to review in under 60 seconds."
+  },
+  {
+    q: "Is PerimenoTracker free?",
+    a: "PerimenoTracker offers a free 14-day trial with full access to all features. After the trial, a subscription is required: $2.99/month or $24.99/year. No account required."
   }
 ];
 
@@ -163,7 +167,7 @@ export default function HomePage() {
             className="mt-10 flex flex-wrap items-center gap-4"
           >
             <a
-              href="https://apps.apple.com"
+              href="https://apps.apple.com/es/app/peri-perimenopause-tracker/id6762806616"
               target="_blank"
               rel="noreferrer"
               className="inline-flex h-12 items-center rounded-[100px] bg-siena px-6 text-[15px] font-medium text-creta"
@@ -361,7 +365,7 @@ export default function HomePage() {
           <div className="mt-12 grid gap-4 md:grid-cols-2">
             <div className="rounded-[20px] border border-[rgba(245,240,232,0.1)] p-8 text-left">
               <p className="text-[12px] font-medium uppercase tracking-[0.1em] text-pizarra">Monthly</p>
-              <p className="mt-4 font-display text-[48px] italic text-creta">$6.99</p>
+              <p className="mt-4 font-display text-[48px] italic text-creta">$2.99</p>
               <p className="text-[13px] text-pizarra">per month</p>
               <ul className="mt-6 space-y-3 text-[14px] text-[rgba(245,240,232,0.7)]">
                 <li>✓ Unlimited symptom logging</li>
@@ -370,7 +374,7 @@ export default function HomePage() {
                 <li>✓ All 20+ symptoms</li>
               </ul>
               <a
-                href="https://apps.apple.com"
+                href="https://apps.apple.com/es/app/peri-perimenopause-tracker/id6762806616"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-8 flex h-12 items-center justify-center rounded-[100px] border border-[rgba(245,240,232,0.25)] text-[15px] font-medium text-creta transition-colors hover:bg-[rgba(245,240,232,0.06)]"
@@ -386,8 +390,8 @@ export default function HomePage() {
               <p className="text-[12px] font-medium uppercase tracking-[0.1em] text-[rgba(245,240,232,0.75)]">
                 Annual
               </p>
-              <p className="mt-4 font-display text-[48px] italic text-creta">$49.99</p>
-              <p className="text-[13px] text-[rgba(245,240,232,0.75)]">per year · ~$4.17/month</p>
+              <p className="mt-4 font-display text-[48px] italic text-creta">$24.99</p>
+              <p className="text-[13px] text-[rgba(245,240,232,0.75)]">per year · ~$2.08/month</p>
               <p className="mt-1 text-[12px] font-medium text-[rgba(245,240,232,0.9)]">Save 40% vs monthly</p>
               <ul className="mt-6 space-y-3 text-[14px] text-[rgba(245,240,232,0.85)]">
                 <li>✓ Everything in Monthly</li>
@@ -396,7 +400,7 @@ export default function HomePage() {
                 <li>✓ Best price, locked in</li>
               </ul>
               <a
-                href="https://apps.apple.com"
+                href="https://apps.apple.com/es/app/peri-perimenopause-tracker/id6762806616"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-8 flex h-12 items-center justify-center rounded-[100px] bg-creta text-[15px] font-medium text-umbra transition-colors hover:bg-[rgba(245,240,232,0.9)]"
@@ -438,10 +442,10 @@ export default function HomePage() {
             Talk to your doctor.
           </h2>
           <p className="mt-5 text-[15px] font-light text-[rgba(245,240,232,0.55)]">
-            14-day free trial · $6.99/month or $49.99/year · iOS only
+            14-day free trial · $2.99/month or $24.99/year · iOS only
           </p>
           <a
-            href="https://apps.apple.com"
+            href="https://apps.apple.com/es/app/peri-perimenopause-tracker/id6762806616"
             target="_blank"
             rel="noreferrer"
             className="mt-9 inline-flex h-12 items-center rounded-[100px] bg-siena px-8 text-[15px] font-medium text-creta transition-colors hover:bg-[#b5623e]"

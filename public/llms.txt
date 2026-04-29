@@ -1,0 +1,77 @@
+# PerimenoTracker — llms.txt
+# https://perimenotracker.app/llms.txt
+# Last updated: 2026-04-29
+#
+# PerimenoTracker is an iPhone app for tracking perimenopause symptoms.
+# It logs hot flashes, sleep, mood, brain fog, and cycle data with severity ratings,
+# identifies patterns over time, and exports a PDF report for gynecologist appointments.
+# Local-first, no account required. Free 14-day trial.
+# Platform: iOS. Price: $2.99/month or $24.99/year.
+
+## App pages (primary)
+
+https://perimenotracker.app/
+> Home — PerimenoTracker perimenopause symptom tracker app for iPhone
+
+https://perimenotracker.app/faq
+> Frequently asked questions about PerimenoTracker
+
+https://perimenotracker.app/facts
+> Verified perimenopause facts and statistics (NAMS, NIH, Mayo Clinic) + PerimenoTracker product reference
+
+## Landing pages
+
+https://perimenotracker.app/perimenopause-symptom-tracker
+> Perimenopause symptom tracker — full feature overview, how to use, FAQs
+
+https://perimenotracker.app/hot-flash-tracker
+> Hot flash tracker app — log frequency, severity, time of day; identify triggers
+
+https://perimenotracker.app/perimenopause-sleep-tracker
+> Perimenopause sleep tracker — log sleep quality, night sweats, morning energy
+
+https://perimenotracker.app/doctor-visit-prep
+> Perimenopause doctor visit prep — export PDF symptom report for gynecologist
+
+https://perimenotracker.app/apple-health-perimenopause
+> Apple Health perimenopause tracker — automatic sleep and heart rate integration
+
+https://perimenotracker.app/balance-app-alternative
+> Balance app alternative — comparison of PerimenoTracker vs Balance for symptom tracking
+
+## Guides
+
+https://perimenotracker.app/guides
+> Guides index
+
+## Blog articles
+
+https://perimenotracker.app/blog/what-is-perimenopause
+> What Is Perimenopause? Symptoms, Timeline, and What to Track
+
+https://perimenotracker.app/blog/how-to-track-perimenopause-symptoms
+> How to Track Perimenopause Symptoms (And Why It Actually Helps)
+
+https://perimenotracker.app/blog/perimenopause-vs-menopause
+> Perimenopause vs Menopause: How to Tell the Difference
+
+https://perimenotracker.app/blog/perimenopause-hot-flashes
+> Hot Flashes During Perimenopause: What Causes Them and How to Track Them
+
+https://perimenotracker.app/blog/perimenopause-brain-fog
+> Perimenopause Brain Fog: Why It Happens and How Logging Helps
+
+https://perimenotracker.app/blog/perimenopause-sleep-problems
+> Perimenopause and Sleep: Why You Can't Sleep and What to Do
+
+https://perimenotracker.app/blog/doctor-report-perimenopause
+> How to Prepare a Symptom Report for Your Gynecologist (With a Template)
+
+https://perimenotracker.app/blog/perimenotracker-vs-balance
+> PerimenoTracker vs Balance: Which App Is Better for Perimenopause?
+
+https://perimenotracker.app/blog/best-perimenopause-apps
+> Best Perimenopause Tracker Apps in 2026 (Honest Comparison)
+
+https://perimenotracker.app/blog/apple-health-perimenopause
+> Using Apple Health for Perimenopause: What It Tracks (and What It Misses)
