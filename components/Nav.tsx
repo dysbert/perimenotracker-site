@@ -28,6 +28,12 @@ export default function Nav() {
           >
             Privacy
           </Link>
+          <Link
+            href="/blog"
+            className="text-[12px] font-medium uppercase tracking-[0.04em] text-pizarra transition-colors hover:text-siena"
+          >
+            Blog
+          </Link>
         </div>
 
         <a
