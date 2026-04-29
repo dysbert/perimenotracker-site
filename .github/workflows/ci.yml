@@ -26,7 +26,7 @@ jobs:
       - name: Install
         env:
           ASTRO_TELEMETRY_DISABLED: "1"
-        run: npm ci
+        run: npm install
 
       - name: Build Astro site
         env:
